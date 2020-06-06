@@ -22,19 +22,22 @@ export const paperGoodsList = [
         id: 0,
         name: 'Paper Towels',
         price: 1,
-        img: pt
+        img: pt,
+        quantity_in_cart: 0
     },
     {
         id: 1,
         name: 'Toilet Paper',
         price: 2,
-        img: tp
+        img: tp,
+        quantity_in_cart: 0
     },
     {
         id: 2,
         name: "Good Toilet Paper",
         price: 5,
-        img: goodtp
+        img: goodtp,
+        quantity_in_cart: 0
     }
 ]
 
@@ -43,31 +46,36 @@ export const fruitList = [
         id: 0,
         name: 'Peaches',
         price: 2,
-        img: peaches
+        img: peaches,
+        quantity_in_cart: 0
     },
     {
         id: 1,
         name: 'Strawberries',
         price: 2,
-        img: strawbabies
+        img: strawbabies,
+        quantity_in_cart: 0
     },
     {
         id: 2,
         name: 'Cara Cara Oranges',
         price: 8,
-        img: caracara
+        img: caracara,
+        quantity_in_cart: 0
     },
     {
         id: 3,
         name: 'Navel Oranges',
         price: .25,
-        img: navelOrange
+        img: navelOrange,
+        quantity_in_cart: 0
     },
     {
         id: 4,
         name: 'Granny Smith',
         price: 1,
-        img: grannySmith    
+        img: grannySmith,
+        quantity_in_cart: 0    
     }
 ]
 
@@ -76,31 +84,36 @@ export const veggieList = [
         id: 0,
         name: 'Carrots',
         price: 1,
-        img: carrots
+        img: carrots,
+        quantity_in_cart: 0
     },
     {
         id: 1,
         name: 'English Cucumbers',
         price: 2,
-        img: englishcuke
+        img: englishcuke,
+        quantity_in_cart: 0
     },
     {
         id: 2,
         name: 'Yellow Onion',
         price: 2,
-        img: yellowOnion
+        img: yellowOnion,
+        quantity_in_cart: 0
     },
     {
         id: 3,
         name: 'Red Onion',
         price: 2,
-        img: redOnion
+        img: redOnion,
+        quantity_in_cart: 0
     },
     {
         id: 4,
         name: 'Red Onion',
         price: 2,
-        img: celery
+        img: celery,
+        quantity_in_cart: 0
     },
 ]
 
@@ -109,18 +122,21 @@ export const meatList = [
         id: 0,
         name: 'Steaks',
         price: 10.5,
-        img: steaks
+        img: steaks,
+        quantity_in_cart: 0
     },
     {
         id: 1,
         name: 'PorkChops',
         price: 8.8,
-        img: porkChops
+        img: porkChops,
+        quantity_in_cart: 0
     },
     {
         id: 2,
         name: 'Whole Chicken',
         price: 7.5,
-        img: wholeChicken
+        img: wholeChicken,
+        quantity_in_cart: 0
     },
 ]

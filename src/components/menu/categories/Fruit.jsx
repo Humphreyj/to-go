@@ -4,16 +4,18 @@ import Product from '../../../utils/Product';
 
 const Fruit = () => {
     const {fruitList} =useContext(ItemContext)
-    const [fruit,setFruit] = useState(fruitList);
+    const [fruits,setFruit] = useState(fruitList);
     return (
         <div className='category fruit'>
-            {fruit?.map(fruit => {
+            {fruits?.map(fruit => {
                 return ( 
                     <Product 
                     name={fruit.name}
                     price={fruit.price}
                     img={fruit.img}
                     item={fruit}
+                    data={fruits}
+                    function={setFruit}
                     />
                 )
             })}

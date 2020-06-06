@@ -5,9 +5,10 @@ import '../styles/product/product.scss';
 const Product = (props) => {
     const {cart, setCart} = useContext(CartContext);
     const addToCart = () => {
-        setCart([...cart,props.item])
-        console.log(cart)
+            setCart([...cart,props.item])
     }
+    console.log(cart)
+    
     return (
         <div className='product'>
             <img src={props.img} alt={props.name} className="product-image"/>
