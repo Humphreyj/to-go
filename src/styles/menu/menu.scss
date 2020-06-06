@@ -1,0 +1,23 @@
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .menu-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        padding: 1%;
+    
+        a {
+            margin: 0 1em;
+            text-decoration: none;
+        }
+    }
+    .category {
+
+        }
+
+}
+
