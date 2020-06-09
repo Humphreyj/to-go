@@ -6,8 +6,9 @@ const Product = (props) => {
     const {cart, setCart} = useContext(CartContext);
     const addToCart = () => {
             setCart([...cart,props.item])
+            console.log(props.item)
     }
-    console.log(cart)
+    
     
     return (
         <div className='product'>

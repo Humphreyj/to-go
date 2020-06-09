@@ -1,0 +1,24 @@
+.product-in-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    .product-in-cart-image {
+        width: 6em;
+        height: 4em;
+        margin-right: 1em;
+    }
+    .product-in-cart-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .product-in-cart-name {
+            margin: 0 1em;
+            font-size: 1em;
+        }
+    }
+    .product-in-cart-buttons {
+        margin: 0 2em;
+    }
+}

@@ -1,0 +1,19 @@
+.cart {
+    
+    .review {
+        text-decoration: underline;
+        padding-left: 2em;
+
+    }
+    .cart-products {
+        border-top: 1px solid black;
+        padding: 2%;
+        .no-items {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+    }
+
+   
+}

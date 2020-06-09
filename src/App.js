@@ -1,5 +1,6 @@
 import React,{useContext,useState,useEffect} from 'react';
 import Navigation from './components/navigation/Navbar';
+import Footer from './components/footer/Footer';
 import Routes from './utils/routes/Routes';
 import ItemContext from './contexts/ItemContext';
 import CoinContext from './contexts/CoinContext';
@@ -33,7 +34,10 @@ function App() {
         <CartContext.Provider value={{cart,setCart}}>
         <div className="App">
           <Navigation />
-          <Routes />
+          <div className='main'>
+            <Routes />
+          </div>
+          <Footer />
         </div>
         </CartContext.Provider>
 

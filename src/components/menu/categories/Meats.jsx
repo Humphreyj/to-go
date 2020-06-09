@@ -13,6 +13,7 @@ const Meats = () => {
                      name={meat.name}
                      price={meat.price}
                      img={meat.img}
+                     item={meat}
                     />
                 )
             })}

@@ -15,6 +15,7 @@ const PaperGoods = () => {
                     img={paperGood.img}
                     name={paperGood.name}
                     price={paperGood.price}
+                    item={paperGood}
                      />
                 )
             })}

@@ -1,0 +1,13 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    .footer-links {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 75;
+        .footer-link {
+
+        }
+    }
+}

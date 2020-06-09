@@ -3,7 +3,7 @@ import ItemContext from '../../../contexts/ItemContext';
 import Product from '../../../utils/Product';
 
 
-const Veggies = () => {
+const Veggies = (props) => {
     const {veggieList} =useContext(ItemContext);
     const [veggies,setVeggies] =useState(veggieList)
     return (
@@ -14,6 +14,7 @@ const Veggies = () => {
                     name={veggie.name}
                     price={veggie.price}
                     img={veggie.img}
+                    item={veggie}
                     
                     />
                 )
