@@ -18,7 +18,7 @@ const Cart = () => {
                     return (
                     <ProductInCart
                     name={cartItem.name}
-                    price={cartItem.price}
+                    price={cartItem.itemPrice}
                     img={cartItem.img}
                      />
                     )

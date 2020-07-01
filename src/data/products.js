@@ -110,7 +110,7 @@ export const veggieList = [
     },
     {
         id: 4,
-        name: 'Red Onion',
+        name: 'Celery',
         price: 2,
         img: celery,
         quantity_in_cart: 0
@@ -140,3 +140,7 @@ export const meatList = [
         quantity_in_cart: 0
     },
 ]
+export const categories = [];
+export const inventory = [];
+
+export const masterList = paperGoodsList.concat(veggieList,fruitList,meatList);

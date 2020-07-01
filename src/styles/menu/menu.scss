@@ -9,10 +9,11 @@
         align-items: center;
         border: 1px solid black;
         padding: 1%;
+        margin-top: 2em;
     
-        a {
+        p {
             margin: 0 1em;
-            text-decoration: none;
+            text-decoration: underline;
         }
     }
     .category {

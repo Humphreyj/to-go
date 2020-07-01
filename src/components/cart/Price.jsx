@@ -8,11 +8,11 @@ const Price = () => {
     const getTotalPrice = () => {
         let itemPrices = [];
         cart.map(item => {
-            itemPrices.push(item.price)
+            itemPrices.push(item.itemPrice)
         })
         let result = itemPrices.length > 0 ? itemPrices.reduce((a,b) => {
-            return a + b
-        }) : ''
+            return parseInt(a) + parseInt(b)
+        }) : 0
         setTotal(result)
         console.log(result)
     }
