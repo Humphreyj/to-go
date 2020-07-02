@@ -7,6 +7,7 @@ const AddItem = () => {
     const {shopInventory,setShopInventory,shopCategories} = useContext(ItemContext)
     const [showCats, setShowCats]= useState([shopCategories])
     const [newItem, setNewItem]=useState({
+        id: Math.random(),
         name: '',
         // itemImage:'',
         itemCategory: '',
@@ -28,6 +29,7 @@ const AddItem = () => {
             setShopInventory([...shopInventory, newItem])
             console.log(shopInventory)
             setNewItem({
+                id: Math.random(),
                 name: '',
             // itemImage:'',
             itemCategory: '',
@@ -66,6 +68,7 @@ const AddItem = () => {
                         value={newItem.itemCategory}
                         onChange={changeHandler}
                         required>
+                            <option value="">None</option>
            {showCats.length > 0 ? showCats.map(item => {
                return (
                    <option value={item}>{item}</option>

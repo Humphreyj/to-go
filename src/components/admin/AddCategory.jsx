@@ -12,6 +12,10 @@ const AddCategory = () => {
     }
     const submitHandler = e => {
         e.preventDefault()
+        if(shopCategories.indexOf(newCategory) !== -1) {
+            alert('This category already exisits.')
+            return
+        }
         if(newCategory === '') {
             alert('You need to create a category to proceed.')
         }else {

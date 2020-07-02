@@ -9,17 +9,12 @@ const Menu = () => {
     const {shopCategories, shopInventory} = useContext(ItemContext)
     const [menuCats, setMenuCats]=useState(shopCategories)
     const [shopMenu, setShopMenu]=useState(shopInventory)
-    useEffect(() => {
-        if(shopCategories.length === 0) {
-            setMenuCats(shopCategories)
-        }else {
-            setMenuCats(shopCategories.unshift('All'))
-            
-        }
-    },[])
 
     const filterMenu = cat => {
         setShopMenu(shopInventory.filter(item => cat === item.itemCategory ))
+    }
+    const showAll = e => {
+        setShopMenu(shopInventory)
     }
 
     return (
@@ -28,13 +23,14 @@ const Menu = () => {
              
             
             <div className="menu-navigation">
+                <p onClick={showAll}>All</p>
                 {menuCats.length > 0 ? menuCats.map(item => {
                     return (
                         <p 
                         onClick={()=>filterMenu(item)}
                         >{item}</p>
                     )
-                }): <p>Nothing here.</p> }
+                }): '' }
             </div>
 
             {shopMenu.length >  0 ? shopMenu.map(item => {

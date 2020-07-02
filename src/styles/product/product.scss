@@ -1,5 +1,5 @@
 .product {
-    margin-top: 1em;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +18,24 @@
 
         }
         .product-price {
-            margin-left: 1em;
+            margin-left: 1rem;
+        }
+    }
+    //product info
+
+    .product-buttons {
+        button {
+            margin: 0 1rem;
+            text-shadow: 1px 1px 0px #111;
+        }
+        .more-info {
+            background-color: dodgerblue;
+            color: white;
+        }
+        .add-to-cart {
+            background-color: limegreen;
+            color: white;
+            
         }
     }
 }
