@@ -140,7 +140,48 @@ export const meatList = [
         quantity_in_cart: 0
     },
 ]
-export const categories = [];
-export const inventory = [];
+export const categories = ["Dairy","Paper","Produce"];
+export const inventory = [
+    {
+        id: 0.9325340115943832,
+        itemCategory: "Dairy",
+        itemPrice: "6",
+        itemQuantity: "2",
+        name: "Milk",
+        inCart: 0
+    },
+    {
+        id: 0.93253401159438334,
+        itemCategory: "Dairy",
+        itemPrice: "5",
+        itemQuantity: "2",
+        name: "Eggs",
+        inCart: 0
+    },
+    {
+        id: 0.932534011594383345,
+        itemCategory: "Paper",
+        itemPrice: "9",
+        itemQuantity: "2",
+        name: "Toilet Paper",
+        inCart: 0
+    },
+    {
+        id: 0.932534011594383366,
+        itemCategory: "Produce",
+        itemPrice: "1",
+        itemQuantity: "20",
+        name: "Peaches",
+        inCart: 0
+    },
+    {
+        id: 0.932534011594383366,
+        itemCategory: "Produce",
+        itemPrice: "1.5",
+        itemQuantity: "20",
+        name: "Oranges",
+        inCart: 0
+    },
+];
 
 export const masterList = paperGoodsList.concat(veggieList,fruitList,meatList);

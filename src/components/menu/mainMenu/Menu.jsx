@@ -3,6 +3,7 @@ import {Route,Link} from 'react-router-dom';
 import Product from '../../../utils/Product';
 import ItemContext from '../../../contexts/ItemContext';
 
+
 import '../../../styles/menu/menu.scss'
 import FeaturedItem from './FeaturedItem'
 const Menu = () => {
@@ -21,7 +22,7 @@ const Menu = () => {
        
         <div className='main-menu'>
              
-            
+          
             <div className="menu-navigation">
                 <p onClick={showAll}>All</p>
                 {menuCats.length > 0 ? menuCats.map(item => {
@@ -32,8 +33,8 @@ const Menu = () => {
                     )
                 }): '' }
             </div>
-
-            {shopMenu.length >  0 ? shopMenu.map(item => {
+                <div className="menu-display">
+                {shopMenu.length >  0 ? shopMenu.map(item => {
                 return (
                     <Product 
                     item={item}
@@ -43,6 +44,8 @@ const Menu = () => {
                     />
                 )
             }) : <p>Nothing here.</p>}
+                </div>
+            
 
            
         </div>

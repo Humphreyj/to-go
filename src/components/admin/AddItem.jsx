@@ -13,6 +13,7 @@ const AddItem = () => {
         itemCategory: '',
         itemPrice: 0,
         itemQuantity: 0,
+        inCart: 0,
     })
     useEffect(() => {
         setShowCats([...shopCategories])
@@ -35,6 +36,7 @@ const AddItem = () => {
             itemCategory: '',
             itemPrice: 0,
             itemQuantity: 0,
+            inCart: 0
         })
         }
     

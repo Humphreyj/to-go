@@ -4,6 +4,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 2% 0;
+    width: 10rem;
+    height: 12rem;
+    margin: 1rem auto;
+    font-family: 'Lato', sans-serif;
 
     .product-image {
         width: 50%
@@ -20,6 +27,9 @@
         .product-price {
             margin-left: 1rem;
         }
+        .product-price::before {
+            content: '$'
+        }
     }
     //product info
 
@@ -27,15 +37,18 @@
         button {
             margin: 0 1rem;
             text-shadow: 1px 1px 0px #111;
-        }
-        .more-info {
-            background-color: dodgerblue;
-            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1em;
+            height: 2rem;
         }
         .add-to-cart {
-            background-color: limegreen;
-            color: white;
-            
+            background-color: rgba(18, 183, 3, 0.7);
+            color: white; 
+        }
+        .add-to-cart:hover {
+            background-color: rgba(18, 183, 3, 1);
+            text-shadow: 2px 0px 0px rgba(18, 183, 3, 1);
         }
     }
 }

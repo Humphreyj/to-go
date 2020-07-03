@@ -15,7 +15,7 @@ const Navbar = () => {
             <nav>
                 <Link to='/'>Home</Link>
                 <Link to='/menu'>Menu</Link>
-                <Link to='/cart'>Cart</Link>
+                <Link to='/cart'><i className="fas fa-shopping-cart"></i></Link>
                 <Link className={adminIsHidden ? 'admin hide': 'admin'} to='/admin'>Admin</Link>
 
             </nav>
