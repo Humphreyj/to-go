@@ -1,8 +1,10 @@
 .main-menu {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100vw;
     .menu-navigation {
         background-color: rgba(247, 7, 23, .9);
         display: flex;
@@ -14,10 +16,10 @@
         margin-top: 2em;
     
         p {
-            margin: 0 1em;
+            margin: 0 .5em;
             text-decoration: underline;
             font-family: 'Merriweather Sans', sans-serif;
-            font-size: 1.2em;
+            font-size: 1em;
             color: white;
         }
         p:hover {
@@ -29,7 +31,7 @@
     .menu-display {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+        width: 100vw;
     }
 }
 

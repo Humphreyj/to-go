@@ -1,0 +1,25 @@
+.menu-categories {
+    border-radius: 6px;
+    width: 25%;
+    z-index: 300;
+    position: absolute;
+    top: 3.5%;
+    left: 30%;
+    background-color: white;
+    border: 1px solid black;
+    .menu-category {
+        padding: 2%;
+        padding-left: 1rem;
+        text-decoration: underline;
+        transition: all .3s ease-out;
+        font-size: 1.2rem;
+        font-family: 'Lato', sans-serif;
+        &:hover {
+            background-color:  rgba(247, 7, 23, .9);
+            color: white;
+            text-shadow: 2px 0px 0px #111;
+        }
+    }
+    
+
+}

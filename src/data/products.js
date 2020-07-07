@@ -140,7 +140,8 @@ export const meatList = [
         quantity_in_cart: 0
     },
 ]
-export const categories = ["Dairy","Paper","Produce"];
+export const collections = ["Grilling", "Essentials"]
+export const categories = ["Dairy","Paper","Produce","Deli",'Pantry',"Meat"];
 export const inventory = [
     {
         id: 0.9325340115943832,
@@ -148,6 +149,7 @@ export const inventory = [
         itemPrice: "6",
         itemQuantity: "2",
         name: "Milk",
+        collection: 'Essentials',
         inCart: 0
     },
     {
@@ -156,6 +158,25 @@ export const inventory = [
         itemPrice: "5",
         itemQuantity: "2",
         name: "Eggs",
+        collection: 'Essentials',
+        inCart: 0
+    },
+    {
+        id: 0.94353401159438334,
+        itemCategory: "Dairy",
+        itemPrice: "5",
+        itemQuantity: "2",
+        name: "Cheedar Cheese",
+        collection: '',
+        inCart: 0
+    },
+    {
+        id: 0.94353412159438334,
+        itemCategory: "Dairy",
+        itemPrice: "5",
+        itemQuantity: "2",
+        name: "Swiss Cheese",
+        collection: '',
         inCart: 0
     },
     {
@@ -164,6 +185,16 @@ export const inventory = [
         itemPrice: "9",
         itemQuantity: "2",
         name: "Toilet Paper",
+        collection: 'Essentials',
+        inCart: 0
+    },
+    {
+        id: 0.932534011664383345,
+        itemCategory: "Paper",
+        itemPrice: "9",
+        itemQuantity: "2",
+        name: "Paper Towels",
+        collection: 'Essentials',
         inCart: 0
     },
     {
@@ -172,6 +203,7 @@ export const inventory = [
         itemPrice: "1",
         itemQuantity: "20",
         name: "Peaches",
+        collection: '',
         inCart: 0
     },
     {
@@ -180,6 +212,52 @@ export const inventory = [
         itemPrice: "1.5",
         itemQuantity: "20",
         name: "Oranges",
+        collection: '',
+        inCart: 0
+    },
+    {
+        id: 0.873534011594383366,
+        itemCategory: "Deli",
+        itemPrice: "2.5",
+        itemQuantity: "20",
+        name: "Salami",
+        collection: '',
+        inCart: 0
+    },
+    {
+        id: 0.873644011594383366,
+        itemCategory: "Deli",
+        itemPrice: "2",
+        itemQuantity: "20",
+        name: "Ham",
+        collection: '',
+        inCart: 0
+    },
+    {
+        id: 0.873655011594383366,
+        itemCategory: "Pantry",
+        itemPrice: "3",
+        itemQuantity: "20",
+        name: "Ketchup",
+        collection: 'Grilling',
+        inCart: 0
+    },
+    {
+        id: 0.873656011594383366,
+        itemCategory: "Pantry",
+        itemPrice: "3",
+        itemQuantity: "20",
+        name: "Mustard",
+        collection: 'Grilling',
+        inCart: 0
+    },
+    {
+        id: 0.873656011594383366,
+        itemCategory: "Meat",
+        itemPrice: "3",
+        itemQuantity: "20",
+        name: "Hot Dogs",
+        collection: 'Grilling',
         inCart: 0
     },
 ];

@@ -12,8 +12,8 @@ const Price = () => {
     
     return (
         <div className='price-display'>
-            <h4 className="price-title">Total Price: {total}</h4>
-            {total > 0 ? <button>Checkout</button> : ''}
+           {total > 0 ?  <h4 className="price-title">Total Price: {total}</h4> : ''}
+            {total > 0 ? <button className='checkout'>Checkout</button> : ''}
             
         </div>
     );

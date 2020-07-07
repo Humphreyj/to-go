@@ -5,6 +5,7 @@ import InventoryItem from './InventoryItem';
 const CurrentStock = () => {
     const {shopInventory} = useContext(ItemContext);
     const [showThis, setShowThis] = useState(shopInventory)
+    
     console.log(shopInventory)
     useEffect(() => {
         setShowThis(shopInventory)
@@ -16,6 +17,7 @@ const CurrentStock = () => {
             : showThis?.map(item => {
                 return (
                     <InventoryItem
+                    item={item}
                     name={item.name}
                     category={item.itemCategory}
                     price={item.itemPrice}

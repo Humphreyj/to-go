@@ -1,48 +1,32 @@
-import React,{useState,useEffect, useContext} from 'react';
+import React,{useState,useContext,useEffect} from 'react';
 import ItemContext from '../../contexts/ItemContext';
-import Categories from './Categories';
-import '../../styles/admin/addItem.scss';
 
-const AddItem = () => {
+const EditItem = (props) => {
+    const [itemToEdit, setItemToEdit]=useState(props.item)
+
     const {shopInventory,setShopInventory,shopCategories} = useContext(ItemContext)
     const [showCats, setShowCats]= useState([shopCategories])
-    const [newItem, setNewItem]=useState({
-        id: Math.random(),
-        name: '',
-        // itemImage:'',
-        itemCategory: '',
-        itemPrice: 0,
-        itemQuantity: 0,
-        collection: '',
-        inCart: 0,
-    })
+
+    
+
+    const changeHandler = (e) => {
+        setItemToEdit({...itemToEdit,[e.target.name]: e.target.value})
+        console.log(itemToEdit)
+    }
     useEffect(() => {
         setShowCats([...shopCategories])
-    }, [shopCategories])
-    const changeHandler = (e) => {
-        setNewItem({...newItem,[e.target.name]: e.target.value})
-        console.log(newItem)
-    }
+    }, [])
+
     const submitHandler = (e) => {
         e.preventDefault();
-        if(newItem.itemCategory === '') {
-            alert('Please select a category.')
-        }else {
-            setShopInventory([...shopInventory, newItem])
-            console.log(shopInventory)
-            setNewItem({
-                id: Math.random(),
-                name: '',
-            // itemImage:'',
-            itemCategory: '',
-            itemPrice: 0,
-            itemQuantity: 0,
-            collection:'',
-            inCart: 0
-        })
-        }
-    
+        setShopInventory(shopInventory.map(item => {
+            if(item.name === props.item.name) {
+                console.log(item)
+            }
+        }))
+        
     }
+    console.log(itemToEdit)
     return (
         <div className='add-item'>
             <h4>Add an item to your store here.</h4>
@@ -53,7 +37,7 @@ const AddItem = () => {
                         <input 
                         type="text"
                         name='name'
-                        value={newItem.name}
+                        value={itemToEdit.name}
                         required
                         onChange={changeHandler}
                         />
@@ -69,15 +53,15 @@ const AddItem = () => {
                         <select 
                         name="itemCategory" 
                         id="cats" 
-                        value={newItem.itemCategory}
+                        value={itemToEdit.itemCategory}
                         onChange={changeHandler}
                         required>
-                            <option value="">None</option>
-           {showCats.length > 0 ? showCats.map(item => {
-               return (
-                   <option value={item}>{item}</option>
-               )
-           }) : <option value="none">No Categories</option> }
+                            
+                    {showCats.map(item => {
+                        return (
+                            <option value={item}>{item}</option>
+                        )
+                    })}
 
         </select>
                     </div>
@@ -86,7 +70,7 @@ const AddItem = () => {
                         <label htmlFor="itemPrice">Price</label>
                         <input 
                         name='itemPrice'
-                        value={newItem.itemPrice}
+                        value={itemToEdit.itemPrice}
                         type="number"
                         onChange={changeHandler}
                         required
@@ -97,7 +81,7 @@ const AddItem = () => {
                         <label htmlFor="itemQuantity">Quantity</label>
                         <input 
                         name='itemQuantity'
-                        value={newItem.itemQuantity}
+                        value={itemToEdit.itemQuantity}
                         type="number"
                         onChange={changeHandler}
                         required
@@ -110,4 +94,4 @@ const AddItem = () => {
     );
 }
 
-export default AddItem;
+export default EditItem;

@@ -7,10 +7,12 @@
     border: 1px solid black;
     border-radius: 6px;
     padding: 2% 0;
-    width: 10rem;
-    height: 12rem;
+    width: 33%;
+    height: 10rem;
     margin: 1rem auto;
     font-family: 'Lato', sans-serif;
+    background-color: white;
+    box-shadow: .5px 1.5px 1.5px #333;
 
     .product-image {
         width: 50%
@@ -18,14 +20,14 @@
 
     .product-info {
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
         align-items: center;
 
         .product-name {
-
+            margin: 0 auto;
         }
         .product-price {
-            margin-left: 1rem;
+            margin: .5rem auto;
         }
         .product-price::before {
             content: '$'
@@ -36,11 +38,13 @@
     .product-buttons {
         button {
             margin: 0 1rem;
-            text-shadow: 1px 1px 0px #111;
+            text-shadow: 2px 0px 0px #111;
             border: none;
             border-radius: 6px;
-            font-size: 1.1em;
+            font-size: .8em;
             height: 2rem;
+            font-weight: bold;
+            box-shadow: 1.5px 1.5px 1.5px #333;
         }
         .add-to-cart {
             background-color: rgba(18, 183, 3, 0.7);
