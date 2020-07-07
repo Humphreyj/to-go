@@ -9,9 +9,10 @@ const Categories = (props) => {
         <div className='menu-categories'
         onMouseLeave={()=> props.setCatsAreVisible(false)}
         >
-            {shopCategories.map(category => {
+            {shopCategories.map((category,i) => {
                 return (
                 <p
+                key={i}
                 className='menu-category'
                 onClick={()=>props.filterMenu(category)}
                 >{category}</p>

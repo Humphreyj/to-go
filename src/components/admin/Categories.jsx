@@ -9,9 +9,9 @@ const Categories = (props) => {
     }, [shopCategories])
     return (
         <select name="categories" id="cats" value={props.newItem.itemCategory}>
-           {showCats.length > 0 ? showCats.map(item => {
+           {showCats.length > 0 ? showCats.map((item,i) => {
                return (
-                   <option value={item}>{item}</option>
+                   <option key={i} value={item}>{item}</option>
                )
            }) : <option value="none">No Categories</option> }
 

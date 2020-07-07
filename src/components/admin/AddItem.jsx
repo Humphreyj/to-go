@@ -73,9 +73,9 @@ const AddItem = () => {
                         onChange={changeHandler}
                         required>
                             <option value="">None</option>
-           {showCats.length > 0 ? showCats.map(item => {
+           {showCats.length > 0 ? showCats.map((item,i) => {
                return (
-                   <option value={item}>{item}</option>
+                   <option key={i} value={item}>{item}</option>
                )
            }) : <option value="none">No Categories</option> }
 
@@ -88,6 +88,8 @@ const AddItem = () => {
                         name='itemPrice'
                         value={newItem.itemPrice}
                         type="number"
+                        min='0.01'
+                        step='0.01'
                         onChange={changeHandler}
                         required
                         />
@@ -99,6 +101,8 @@ const AddItem = () => {
                         name='itemQuantity'
                         value={newItem.itemQuantity}
                         type="number"
+                        min='1'
+                        step='1'
                         onChange={changeHandler}
                         required
                         />

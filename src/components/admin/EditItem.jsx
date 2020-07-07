@@ -19,17 +19,19 @@ const EditItem = (props) => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        setShopInventory(shopInventory.map(item => {
-            if(item.name === props.item.name) {
-                console.log(item)
-            }
-        }))
-        
+        let index = shopInventory.indexOf(props.item)
+        let items = [...shopInventory]
+        let item = {...items[index]}
+        item = itemToEdit
+        items[index] = item
+        console.log(item)
+        setShopInventory(items)
+        props.setEditing(false)  
     }
-    console.log(itemToEdit)
+    
+    
     return (
         <div className='add-item'>
-            <h4>Add an item to your store here.</h4>
             <form onSubmit={submitHandler}>
                 <div className="item-info">
                     <div className="item-name input-block">

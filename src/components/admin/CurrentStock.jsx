@@ -6,7 +6,6 @@ const CurrentStock = () => {
     const {shopInventory} = useContext(ItemContext);
     const [showThis, setShowThis] = useState(shopInventory)
     
-    console.log(shopInventory)
     useEffect(() => {
         setShowThis(shopInventory)
         
@@ -14,9 +13,10 @@ const CurrentStock = () => {
     return (
         <div>
             {showThis?.length === 0 ? <h4>Your inventory is empty.</h4> 
-            : showThis?.map(item => {
+            : showThis?.map((item,i) => {
                 return (
                     <InventoryItem
+                    key={i}
                     item={item}
                     name={item.name}
                     category={item.itemCategory}

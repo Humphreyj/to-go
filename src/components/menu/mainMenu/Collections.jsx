@@ -9,9 +9,10 @@ const Collections = (props) => {
         <div className='menu-collections'
         onMouseLeave={()=> props.setCollectionsAreVisible(false)}
         >
-            {shopCollections.map(collection => {
+            {shopCollections.map((collection,i) => {
                 return (
                 <p
+                key={i}
                 className='menu-collection'
                 onClick={()=>props.filterCollection(collection)}
                 >{collection}</p>

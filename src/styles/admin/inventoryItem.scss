@@ -1,9 +1,11 @@
 .inventory-item  {
     border: 1px solid black;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 90vw;
+    margin: .5rem 0;
     .inventory-item-info {
         display: flex;
         justify-content: space-evenly;

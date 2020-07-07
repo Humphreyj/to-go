@@ -42,9 +42,10 @@ const Menu = () => {
 
             
             <div className="menu-display">
-            {shopMenu.length >  0 ? shopMenu.map(item => {
+            {shopMenu.length >  0 ? shopMenu.map((item,i) => {
             return (
                 <Product 
+                key={i}
                 item={item}
                 name={item.name}
                 price={item.itemPrice}
