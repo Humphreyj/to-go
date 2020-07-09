@@ -16,6 +16,7 @@ function App() {
  const [shopInventory, setShopInventory] =useState(inventory)
  const [shopCategories, setShopCategories]=useState(categories)
  const [shopCollections, setShopCollections]=useState(collections)
+ const [shopOrders, setShopOrders] =useState([])
   // const coin_API_KEY =  'b11da64dda6738ee93296df31ad2d9e889f1f8777923eee55ccb14229e8d17fe'
   const [total, setTotal] = useState(0);
   const getTotalPrice = () => {
@@ -33,7 +34,7 @@ function App() {
     console.log(result)
 }
   return (
-    <ItemContext.Provider value={{shopInventory,setShopInventory,shopCategories,setShopCategories,shopCollections, setShopCollections}}>
+    <ItemContext.Provider value={{shopInventory,setShopInventory,shopCategories,setShopCategories,shopCollections, setShopCollections,shopOrders,setShopOrders}}>
         <CartContext.Provider value={{cart,setCart,total,setTotal,getTotalPrice}}>
         <div className="App">
           <Navigation />

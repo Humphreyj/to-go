@@ -6,6 +6,7 @@ import '../../styles/admin/addItem.scss';
 const AddItem = () => {
     const {shopInventory,setShopInventory,shopCategories} = useContext(ItemContext)
     const [showCats, setShowCats]= useState([shopCategories])
+    const [addingItem, setAddingItem] =useState(false)
     const [newItem, setNewItem]=useState({
         id: Math.random(),
         name: '',
@@ -45,8 +46,8 @@ const AddItem = () => {
     }
     return (
         <div className='add-item'>
-            <h4>Add an item to your store here.</h4>
-            <form onSubmit={submitHandler}>
+            <button onClick={()=>setAddingItem(!addingItem)}>{addingItem ? "All Done" : "Add an item to your store."}</button>
+            <form className={addingItem ? 'add-item-form' : 'hide'} onSubmit={submitHandler}>
                 <div className="item-info">
                     <div className="item-name input-block">
                         <label htmlFor="itemName">Item Name</label>

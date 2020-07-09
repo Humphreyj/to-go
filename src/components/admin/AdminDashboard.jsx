@@ -2,12 +2,14 @@ import React from 'react';
 import AddItem from './AddItem';
 import AddCategory from './AddCategory';
 import CurrentStock from './CurrentStock';
+import Orders from './Orders';
 import '../../styles/admin/adminDashboard.scss'
 
 const AdminDashboard = () => {
     return (
         <div className='admin-dash'>
             <h1>Welcome, Admin!</h1>
+            <Orders />
             <CurrentStock />
             <AddCategory />
             <AddItem />
