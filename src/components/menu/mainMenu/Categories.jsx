@@ -5,6 +5,8 @@ import '../../../styles/menu/categories.scss'
 
 const Categories = (props) => {
     const {shopCategories}=useContext(ItemContext);
+
+
     return (
         <div className='menu-categories'
         onMouseLeave={()=> props.setCatsAreVisible(false)}

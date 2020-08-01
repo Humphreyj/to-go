@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
-import  '../../styles/navigation/navigation.scss';
+
 
 const Navbar = () => {
     const [adminIsHidden, setAdminIsHidden]=useState(false)

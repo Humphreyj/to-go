@@ -8,6 +8,7 @@ import ItemContext from '../../../contexts/ItemContext';
 
 import '../../../styles/menu/menu.scss'
 import FeaturedItem from './FeaturedItem'
+
 const Menu = () => {
     const {shopCategories, shopInventory} = useContext(ItemContext)
     const [menuCats, setMenuCats]=useState(shopCategories)
@@ -36,6 +37,7 @@ const Menu = () => {
                 >Categories</p>
                 <p onMouseEnter={()=>setCollectionsAreVisible(true)}>Collections</p>
             </div>
+            
             {catsAreVisible ? <Categories catsAreVisible={catsAreVisible}
                 setCatsAreVisible={setCatsAreVisible} filterMenu={filterMenu} /> : ''}
             {collectionsAreVisible ? <Collections collectionsAreVisible={collectionsAreVisible} setCollectionsAreVisible={setCollectionsAreVisible} filterCollection={filterCollection} /> : ''}
@@ -46,6 +48,7 @@ const Menu = () => {
             return (
                 <Product 
                 key={i}
+                itemImg={item.itemImg}
                 item={item}
                 name={item.name}
                 price={item.itemPrice}

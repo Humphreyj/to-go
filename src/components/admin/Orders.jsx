@@ -9,7 +9,7 @@ const Orders = () => {
     })
     return (
         <div>
-            {shopOrders.map(order => {
+            {shopOrders.length > 0 ? shopOrders.map(order => {
                 return (
                     <div className="order">
                        { order.map(orderItem => {
@@ -17,13 +17,15 @@ const Orders = () => {
                                <div className="order-item">
                                    <p>{orderItem.name}</p>
                                    <p className="amount-ordered">{orderItem.inCart} ordered</p>
+                                   <p className="amount-in-stock">{orderItem.itemQuantity} in stock</p>
+                                   
                                </div>
                            )
                         })}
                     </div>
                 )
-            })}
-            <h1>You Have No Orders</h1>
+            }) : <h1>You Have No Orders</h1>}
+            
         </div>
     );
 }

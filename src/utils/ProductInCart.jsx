@@ -5,15 +5,23 @@ import '../styles/cart/productInCart.scss';
 const Product = (props) => {
     const [quantity,setQuantity] =useState(props.inCart)
     const [itemTotal, setItemTotal] =useState(props.price * quantity);
+    const [outOfStock,setOutOfStock] = useState(false)
     const {cart, setCart,total,setTotal,getTotalPrice} = useContext(CartContext);
     const removeFromCart = (name) => {
             setCart(cart.filter(item => item.name !== name))
+            props.item.itemQuantity += props.item.inCart 
+            props.item.inCart = 0;
     }
     const increaseAmount = (name) => {
-       let index = cart.findIndex(item => item.name === name);
-      setQuantity(quantity => quantity +=1)
+       if(props.item.itemQuantity <= 0) {
+            setOutOfStock(true)
+       }else {
+        setQuantity(quantity => quantity +=1)
         props.item.inCart += 1;
+        props.item.itemQuantity -= 1;
         getTotalPrice();
+       }
+    
     }
     const decreaseAmount = (name) => {
         
@@ -21,7 +29,11 @@ const Product = (props) => {
            removeFromCart(name);
         }else {
             setQuantity(quantity => quantity -=1);
+            props.item.itemQuantity += 1;
             setTotal(total => total - props.price)
+            if(props.item.itemQuantity > 0) {
+                setOutOfStock(false)
+            }
         }
     }
     useEffect(() => {
@@ -49,7 +61,7 @@ const Product = (props) => {
                 onClick={()=> removeFromCart(props.name)}
                 ><i className="fas fa-trash-alt"></i></button>
                 <button 
-                className="increase-item-in-cart"
+                className={outOfStock ? "hide" : "increase-item-in-cart"}
                 onClick={()=>increaseAmount(props.name)}
                 ><i className="fas fa-plus-square"></i></button>
             </div>

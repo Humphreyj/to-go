@@ -1,0 +1,34 @@
+//admin
+@import './admin/addItem.scss';
+@import './admin/adminDashboard.scss';
+@import './admin/currentStock.scss';
+@import './admin/inventoryItem.scss';
+@import './admin/orders.scss';
+
+//cart
+@import './cart/cart.scss';
+@import './cart/checkoutModal.scss';
+@import './cart/productInCart.scss';
+
+//menu
+@import './menu/categories.scss';
+@import './menu/collections.scss';
+@import './menu/featuredItem.scss';
+@import './menu/menu.scss';
+
+//product
+//price
+@import './product/product.scss';
+
+//price
+@import './price/price.scss';
+
+//home
+@import './home/splash.scss';
+
+
+
+//ui stuff
+@import './ui/backdrop.scss';
+@import './navigation/navigation.scss';
+@import './footer/footer.scss';

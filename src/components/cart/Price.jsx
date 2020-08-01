@@ -25,7 +25,11 @@ const Price = () => {
             {total > 0 ? <button 
             onClick={checkout}
             className='checkout'>Checkout</button> : ''}
-            {checkingOut ? <CheckoutModal /> : ''}
+            {checkingOut ?
+             <CheckoutModal
+             checkingOut={checkingOut}
+             setCheckingOut={setCheckingOut}
+             /> : ''}
             
         </div>
     );

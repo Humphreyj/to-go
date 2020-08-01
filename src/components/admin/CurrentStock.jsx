@@ -4,7 +4,7 @@ import InventoryItem from './InventoryItem';
 import '../../styles/admin/currentStock.scss';
 
 const CurrentStock = () => {
-    const {shopInventory} = useContext(ItemContext);
+    const {shopInventory,shopCategories} = useContext(ItemContext);
     const [showThis, setShowThis] = useState(shopInventory)
     const [displayInventory, setDisplayInventory]=useState(false);
     
