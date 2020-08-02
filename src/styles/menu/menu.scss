@@ -31,7 +31,13 @@
     .menu-display {
         display: flex;
         flex-wrap: wrap;
-        width: 100vw;
+     
+    }
+
+    @media(min-width: 550px) {
+        .menu-navigation {
+            font-size: 1.5em;
+        }
     }
 }
 

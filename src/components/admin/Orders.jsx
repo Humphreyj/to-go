@@ -8,7 +8,7 @@ const Orders = () => {
         console.log(shopOrders)
     })
     return (
-        <div>
+        <div className='orders'>
             {shopOrders.length > 0 ? shopOrders.map(order => {
                 return (
                     <div className="order">
@@ -24,7 +24,7 @@ const Orders = () => {
                         })}
                     </div>
                 )
-            }) : <h1>You Have No Orders</h1>}
+            }) : <h1 className='no-orders'>You Currently Have No Orders</h1>}
             
         </div>
     );

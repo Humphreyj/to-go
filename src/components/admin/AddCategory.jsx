@@ -1,7 +1,5 @@
 import React,{useState,useContext} from 'react';
 import ItemContext from '../../contexts/ItemContext';
-
-
 const AddCategory = () => {
     const {shopCategories, setShopCategories} = useContext(ItemContext);
     const [newCategory, setNewCategory] = useState('');
@@ -25,7 +23,7 @@ const AddCategory = () => {
         
     }
     return (
-        <div>
+        <div className='add-category-container'>
             <form onSubmit={submitHandler}>
                 <input 
                 placeholder='Add Category'
@@ -33,7 +31,7 @@ const AddCategory = () => {
                 value={newCategory}
                 onChange={changeHandler}
                 type="text"/>
-                <button>Add</button>
+                <button className='add-category-button'>Add</button>
             </form>
             
         </div>

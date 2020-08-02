@@ -46,7 +46,7 @@ const AddItem = () => {
     }
     return (
         <div className='add-item'>
-            <button onClick={()=>setAddingItem(!addingItem)}>{addingItem ? "All Done" : "Add an item to your store."}</button>
+            <button className='add-item-toggle' onClick={()=>setAddingItem(!addingItem)}>{addingItem ? "All Done" : "Add an item to your store."}</button>
             <form className={addingItem ? 'add-item-form' : 'hide'} onSubmit={submitHandler}>
                 <div className="item-info">
                     <div className="item-name input-block">

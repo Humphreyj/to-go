@@ -8,7 +8,7 @@ import '../../styles/admin/adminDashboard.scss'
 const AdminDashboard = () => {
     return (
         <div className='admin-dash'>
-            <h1>Welcome, Admin!</h1>
+            <h1 className='welcome-text'>Welcome, Admin!</h1>
             <Orders />
             <CurrentStock />
             <AddCategory />

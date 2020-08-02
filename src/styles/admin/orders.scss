@@ -1,15 +1,23 @@
-.order {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid black;
-    .order-item {
-        margin: 0;
+.orders {
+    .order {
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        p {
-            margin: 4px ;
+        flex-direction: column;
+        align-items: flex-start;
+        border: 1px solid black;
+        .order-item {
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            p {
+                margin: 4px ;
+            }
         }
+    
+    
+    }
+    .no-orders {
+        font-size: 1.4em;
     }
 }
+
