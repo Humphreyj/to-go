@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/home/splash.scss';
 
 const Splash = () => {
@@ -10,8 +11,8 @@ const Splash = () => {
                 </div>
             </div>
             <p className='store-description'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo totam repellat, libero delectus quam a, consequuntur ipsa eius eos, aliquid temporibus ducimus quia ratione fugit.</p>
-
-           <button className="see-menu">See Our Products</button>
+            <Link to='/menu'><button className="see-menu">See Our Products</button></Link>
+           
            <div className="banner-two">
                 <div className="showcase-text">
                     <p>An almost unbelievable selection!</p>

@@ -7,6 +7,15 @@ import englishcuke from '../img/englishcuke.jpg';
 import caracara from '../img/caracara.jpg';
 import grannySmith from '../img/grannySmith.jpg';
 import strawbabies from '../img/strawbabies.jpg';
+import eggs from '../img/eggs.png';
+import milk from '../img/milk.jpg'
+import cheddar from '../img/cheddar.jpg'
+import swiss from '../img/swiss.png';
+import salami from '../img/salami.jpg';
+import ham from '../img/ham.jpg';
+import hotdog from '../img/hotdog.png';
+import ketchup from '../img/ketchup.png';
+import mustard from '../img/mustard.jpg';
 
 
 
@@ -20,6 +29,7 @@ export const inventory = [
         itemPrice: "6",
         itemQuantity: "4",
         name: "Milk",
+        itemImg: milk,
         collection: 'Essentials',
         inCart: 0
     },
@@ -29,6 +39,7 @@ export const inventory = [
         itemPrice: "5",
         itemQuantity: "3",
         name: "Eggs",
+        itemImg: eggs,
         collection: 'Essentials',
         inCart: 0
     },
@@ -38,6 +49,7 @@ export const inventory = [
         itemPrice: "5",
         itemQuantity: "2",
         name: "Cheedar Cheese",
+        itemImg: cheddar,
         collection: '',
         inCart: 0
     },
@@ -47,6 +59,7 @@ export const inventory = [
         itemPrice: "5",
         itemQuantity: "2",
         name: "Swiss Cheese",
+        itemImg: swiss,
         collection: '',
         inCart: 0
     },
@@ -96,6 +109,7 @@ export const inventory = [
         itemPrice: "2.5",
         itemQuantity: "20",
         name: "Salami",
+        itemImg: salami,
         collection: '',
         inCart: 0
     },
@@ -105,6 +119,7 @@ export const inventory = [
         itemPrice: "2",
         itemQuantity: "20",
         name: "Ham",
+        itemImg: ham,
         collection: '',
         inCart: 0
     },
@@ -114,6 +129,7 @@ export const inventory = [
         itemPrice: "3",
         itemQuantity: "20",
         name: "Ketchup",
+        itemImg: ketchup,
         collection: 'Grilling',
         inCart: 0
     },
@@ -123,6 +139,7 @@ export const inventory = [
         itemPrice: "3",
         itemQuantity: "0",
         name: "Mustard",
+        itemImg: mustard,
         collection: 'Grilling',
         inCart: 0
     },
@@ -132,6 +149,7 @@ export const inventory = [
         itemPrice: "3",
         itemQuantity: "20",
         name: "Hot Dogs",
+        itemImg: hotdog,
         collection: 'Grilling',
         inCart: 0
     },
