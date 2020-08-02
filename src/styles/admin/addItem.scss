@@ -4,43 +4,62 @@
     align-items: center;
     justify-content: center;
     padding: 2%;
-
+    width: 100%;
     .add-item-toggle {
         margin: 1em 0;
         height: 30px;
         border-radius: 6px;
         font-size: 1.1em;
     }
-   
-
     .add-item-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55%;
+        transition: all 0.3s ease;
         .input-block {
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
             align-items: center;
-            margin-bottom: 1em;
+            margin: 5px 0;
+        }
+        label {
+            width: 100%;
+            margin: 0 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        input {
+            width: 80%;
+            font-size: 1.1em;
+        }
+        select {
+            width: 80%;
+            font-size: 1.1em;
         }
         .item-info {
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
             align-items: center;
         }
         .item-stock-info {
             display: flex;
-            justify-content: space-evenly;
+            flex-direction: column;
             align-items: center;
-            .input-block {
-                margin: 0 .5em 1em 0;
-            }
+        }
+        .add-item-button {
+            margin: 10px 15px;
+            height: 30px;
+            border-radius: 6px;
+            font-size: 1.1em;
+            font-weight: bold;
+            background-color: green;
+            color: white;
+        }
+ 
+    }//add-item-form
+}//add-item
+
+    .hide {
+        display: none;
     }
-}
-.hide {
-    display: none;
-}
-}

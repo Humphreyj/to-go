@@ -13,7 +13,6 @@ const AdminDashboard = () => {
             <CurrentStock />
             <AddCategory />
             <AddItem />
-            messages
         </div>
     );
 }

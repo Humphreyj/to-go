@@ -31,11 +31,10 @@ const EditItem = (props) => {
     
     
     return (
-        <div className='add-item'>
-            <form onSubmit={submitHandler}>
+            <form className='edit-form' onSubmit={submitHandler}>
                 <div className="item-info">
                     <div className="item-name input-block">
-                        <label htmlFor="itemName">Item Name</label>
+                        <label htmlFor="itemName">Name</label>
                         <input 
                         type="text"
                         name='name'
@@ -65,7 +64,7 @@ const EditItem = (props) => {
                         )
                     })}
 
-        </select>
+                        </select>
                     </div>
                    
                     <div className='input-block'>
@@ -78,21 +77,21 @@ const EditItem = (props) => {
                         required
                         />
                     </div>
+                    <div className='input-block'>
+                    <label htmlFor="itemQuantity">Quantity</label>
+                    <input 
+                    name='itemQuantity'
+                    value={itemToEdit.itemQuantity}
+                    type="number"
+                    onChange={changeHandler}
+                    required
+                    />
                 </div>
-                <div className='input-block'>
-                        <label htmlFor="itemQuantity">Quantity</label>
-                        <input 
-                        name='itemQuantity'
-                        value={itemToEdit.itemQuantity}
-                        type="number"
-                        onChange={changeHandler}
-                        required
-                        />
-                    </div>
-                <button>Add Item</button>
+                </div>
+                
+                <button className='save'>Save</button>
             </form>
             
-        </div>
     );
 }
 

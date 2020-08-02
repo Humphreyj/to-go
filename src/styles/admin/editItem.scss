@@ -1,0 +1,69 @@
+.edit-form {
+    width: 55%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .input-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 0;
+        label {
+            width: 100%;
+            margin: 0 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        input {
+            width: 80%;
+            font-size: 1.1em;
+        }
+        select {
+            width: 80%;
+            font-size: 1.1em;
+        }
+
+    }
+
+    .save {
+        margin: 10px 15px;
+        height: 30px;
+        border-radius: 6px;
+        font-size: 1.1em;
+        font-weight: bold;
+        background-color: green;
+        color: white;
+    }
+    @media(min-width: 700px) {
+        width: 100%;
+        .item-stock-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .input-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px 0;
+            font-size: 1.1em;
+            label {
+                width: 100%;
+                margin: 0 10px;
+                text-align: center;
+            }
+            input {
+                width: 80%;
+                height: 20px;
+                font-size: 1.1em;
+            }
+            select {
+                width: 80%;
+                height: 25px;
+                font-size: 1em;
+            }
+    
+        }
+    }//700px
+    }//edit-form

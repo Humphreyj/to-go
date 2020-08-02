@@ -38,7 +38,7 @@
     .product-buttons {
         button {
             margin: 0 1rem;
-            text-shadow: 2px 0px 0px #111;
+ 
             border: none;
             border-radius: 6px;
             font-size: .8em;
@@ -48,11 +48,12 @@
         }
         .add-to-cart {
             background-color: rgba(18, 183, 3, 0.7);
+            font-weight: bold;
             color: white; 
         }
         .add-to-cart:active {
             background-color: rgba(18, 183, 3, 1);
-            text-shadow: 2px 0px 0px rgba(18, 183, 3, 1);
+            
         }
 
         .out-of-stock {

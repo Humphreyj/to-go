@@ -74,13 +74,13 @@ const AddItem = () => {
                         onChange={changeHandler}
                         required>
                             <option value="">None</option>
-           {showCats.length > 0 ? showCats.map((item,i) => {
-               return (
-                   <option key={i} value={item}>{item}</option>
-               )
-           }) : <option value="none">No Categories</option> }
+                        {showCats.length > 0 ? showCats.map((item,i) => {
+                            return (
+                                <option key={i} value={item}>{item}</option>
+                            )
+                        }) : <option value="none">No Categories</option> }
 
-        </select>
+                        </select>
                     </div>
                    
                     <div className='input-block'>
@@ -95,8 +95,8 @@ const AddItem = () => {
                         required
                         />
                     </div>
-                </div>
-                <div className='input-block'>
+
+                    <div className='input-block'>
                         <label htmlFor="itemQuantity">Quantity</label>
                         <input 
                         name='itemQuantity'
@@ -108,7 +108,9 @@ const AddItem = () => {
                         required
                         />
                     </div>
-                <button>Add Item</button>
+                </div>
+                
+                <button className='add-item-button'>Add Item</button>
             </form>
             
         </div>
