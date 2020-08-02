@@ -7,19 +7,21 @@
     background-color: rgba(247, 7, 23, .9);
     .nav-title {
         margin-left: 1%;
-        font-size: 1.3em;
+        font-size: 1.6em;
         color: white;
         text-shadow: 2px 1px 0px #111;
     }
     nav {
-        
+        .desktop-link {
+            display: none;
+        }
         
         a {
-            margin: 0 .5em;
+            margin: 0 10px;
             text-decoration: none;
             color: white;
             text-shadow: 2px 1px 0px #111;
-            font-size: 1.2em;
+            font-size: 1.4em;
         }
 
         .hide {
@@ -51,6 +53,9 @@
             display: flex;
             align-items:center;
             justify-content: center;
+            .desktop-link {
+                display: inline-block;
+            }
             a {
                 margin: 0 30px;
                 text-decoration: none;
