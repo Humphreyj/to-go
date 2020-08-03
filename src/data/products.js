@@ -16,6 +16,7 @@ import ham from '../img/ham.jpg';
 import hotdog from '../img/hotdog.png';
 import ketchup from '../img/ketchup.png';
 import mustard from '../img/mustard.jpg';
+import buns from '../img/buns.jpg';
 
 
 
@@ -48,7 +49,7 @@ export const inventory = [
         itemCategory: "Dairy",
         itemPrice: "5",
         itemQuantity: "2",
-        name: "Cheedar Cheese",
+        name: "Cheddar Cheese",
         itemImg: cheddar,
         collection: '',
         inCart: 0
@@ -137,7 +138,7 @@ export const inventory = [
         id: 0.873656011594383366,
         itemCategory: "Pantry",
         itemPrice: "3",
-        itemQuantity: "0",
+        itemQuantity: "10",
         name: "Mustard",
         itemImg: mustard,
         collection: 'Grilling',
@@ -150,6 +151,16 @@ export const inventory = [
         itemQuantity: "20",
         name: "Hot Dogs",
         itemImg: hotdog,
+        collection: 'Grilling',
+        inCart: 0
+    },
+    {
+        id: 0.333656011594383366,
+        itemCategory: "Pantry",
+        itemPrice: "4",
+        itemQuantity: "11",
+        name: "Hot Dog Buns",
+        itemImg: buns,
         collection: 'Grilling',
         inCart: 0
     },

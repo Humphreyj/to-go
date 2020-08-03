@@ -18,7 +18,7 @@ const Product = (props) => {
     const inCartNotify = () => {
         toast.success(`${props.name} added to Cart.`, {
             position: "top-right",
-            autoClose: 1200,
+            autoClose: 1400,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -29,7 +29,7 @@ const Product = (props) => {
     const itemIsUnavailable = () => {
         toast.error(`This item is currently unavailable.`, {
             position: "top-right",
-            autoClose: 1200,
+            autoClose: 1400,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,

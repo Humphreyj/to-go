@@ -22,9 +22,9 @@ const CheckoutModal = (props) => {
         <div className='checkout-modal'>
             <h4 className="thank-you">Thank you for shopping with us! </h4>
            
-            <h4 className="your-total">Your total is: {total}</h4>
-            <h4>Your receipt has been emailed to your address on file.</h4>
-            <button onClick={completeCheckout}>Confirm</button>
+            <h4 className="your-total">Your total is: ${total}</h4>
+            <h4 className='confirmation'>Your order has been recieved and we will notify you when it is ready for pick up!</h4>
+            <button className='confirm-button' onClick={completeCheckout}>Confirm</button>
         </div>
         </>
         
