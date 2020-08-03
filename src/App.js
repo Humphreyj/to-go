@@ -1,4 +1,5 @@
 import React,{useContext,useState,useEffect} from 'react';
+import {ToastContainer} from 'react-toastify';
 import Navigation from './components/navigation/Navbar';
 import MobileNav from './utils/MobileNav';
 import Sidedrawer from './components/sidedrawer/Sidedrawer';
@@ -7,12 +8,13 @@ import Routes from './utils/routes/Routes';
 import ItemContext from './contexts/ItemContext';
 import UIC from './contexts/UIC';
 import CoinContext from './contexts/CoinContext';
-import {categories, inventory,collections} from './data/products'
+import {categories, inventory,collections} from './data/products';
 import './App.css';
 import axios from 'axios';
 import './styles/global.scss';
 import { Route } from 'react-router-dom';
 import CartContext from './contexts/CartContext';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
  const [cart,setCart] = useState([])
@@ -43,6 +45,7 @@ function App() {
         <CartContext.Provider value={{cart,setCart,total,setTotal,getTotalPrice}}>
           <UIC.Provider value={{sideDrawerOpen, setSideDrawerOpen}}>
             <div className="App">
+              <ToastContainer />
             <Navigation />
             <MobileNav />
             <Sidedrawer />
