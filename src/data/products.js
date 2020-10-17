@@ -21,7 +21,7 @@ import buns from '../img/buns.jpg';
 
 
 
-export const collections = ["Grilling", "Essentials"]
+export const collections = ["Grilling", "Essentials","Entertaining","Cleaning","Seasonal"]
 export const categories = ["Dairy","Paper","Fruit","Vegetables","Deli","Home",'Pantry',"Meat"];
 export const inventory = [
     {

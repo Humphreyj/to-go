@@ -35,12 +35,12 @@ const Menu = () => {
                 <p onClick={showAll}>All</p>
                 <p onMouseEnter={()=>setCatsAreVisible(true)}
                 >Categories</p>
-                <p onMouseEnter={()=>setCollectionsAreVisible(true)}>Collections</p>
+                <Link to='/collections'>Collections</Link>
             </div>
             
             {catsAreVisible ? <Categories catsAreVisible={catsAreVisible}
                 setCatsAreVisible={setCatsAreVisible} filterMenu={filterMenu} /> : ''}
-            {collectionsAreVisible ? <Collections collectionsAreVisible={collectionsAreVisible} setCollectionsAreVisible={setCollectionsAreVisible} filterCollection={filterCollection} /> : ''}
+            
 
             
             <div className="menu-display">
