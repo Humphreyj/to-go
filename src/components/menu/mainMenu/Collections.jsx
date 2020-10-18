@@ -2,6 +2,7 @@ import React,{useContext} from 'react';
 import ItemContext from '../../../contexts/ItemContext';
 import {Link} from 'react-router-dom';
 
+
 const Collections = () => {
     const {shopCollections}=useContext(ItemContext)
 
@@ -11,7 +12,10 @@ const Collections = () => {
             <div className="collections-menu">
                 {shopCollections.map(collection => {
                     return(
-                        <Link to={`/collections/${collection.toLowerCase()}`}>{collection}</Link>
+                        <div className="collections-div">
+                            <img className="collection-thumbnail" src={collection.img} alt=""/>
+                            <Link className="collection-name" to={`/collections/${collection.name}`}>{collection.name}</Link>
+                        </div>
                     )
                 })}
             </div>

@@ -1,0 +1,41 @@
+.all-collections {
+    .collection-title {
+        text-align: center;
+    }
+    .collections-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 75%;
+        margin: 0 auto;
+        @media(max-width:500px) {
+            flex-direction: column;
+            width: 90%;
+        }
+        .collections-div {
+            display: flex;
+            align-items: center;
+            border: 1px solid;
+            border-radius: 6px;
+            width: 45%;
+            margin: 20px 0;
+            @media(max-width:500px) {
+                width: 100%;
+            }
+            .collection-thumbnail {
+                width: 175px;
+                height: 150px;
+                @media(max-width:500px) {
+                    width: 125px;
+                    height: 100px;
+                }
+            }
+            .collection-name {
+                font-size: 1.8em;
+                margin-left: 25px;
+                color: black;
+                
+            }
+        }
+    }
+}
