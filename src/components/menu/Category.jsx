@@ -11,7 +11,12 @@ const Category = (props) => {
     return (
         <div className='category-main'>
             <div className="category-info">
-                <h3>{target_category}</h3>
+            {shopCategories.map(category => {
+                    if (category.name == target_category) {
+                    return( <img className='target_category_image' src={category.img} alt=""/>)
+                    }
+                })}
+                <h3 className='target_category_name'>{target_category}</h3>
             </div>
 
             <div className="category-items">
