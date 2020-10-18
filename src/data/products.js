@@ -192,7 +192,7 @@ export const inventory = [
     },
     {
         id: 0.932534011664383345,
-        itemCategory: "Home",
+        itemCategory: "",
         itemPrice: "9",
         itemQuantity: "2",
         name: "Paper Towels",

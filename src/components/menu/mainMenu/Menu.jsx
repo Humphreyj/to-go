@@ -16,9 +16,7 @@ const Menu = () => {
         <div className='main-menu'>
              
           
-            <div className="menu-navigation">
-                <Link to='/collections'>Collections</Link>
-            </div>
+            <h3 className="shop-by-category">Shop By Category</h3>
             
             <div className="category-box">
                 {shopCategories.map(cat => {
@@ -30,6 +28,10 @@ const Menu = () => {
                         
                     )
                 })}
+            </div>
+
+            <div className="menu-navigation">
+                <h3 className="shop-by-collection">Or browse our <Link to='/collections'>collections</Link></h3>
             </div>
             
             
