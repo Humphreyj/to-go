@@ -4,6 +4,9 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 100px;
+    @media(max-width: 500px) {
+        padding-bottom: 150px;
+    }
     .category-info{
         display: flex;
         align-items: center;
