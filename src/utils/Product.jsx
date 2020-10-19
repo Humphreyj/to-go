@@ -1,4 +1,5 @@
 import React,{useState,useEffect,useContext} from 'react';
+import {Link} from 'react-router-dom';
 import {ToastContainer, toast} from 'react-toastify';
 import CartContext from '../contexts/CartContext';
 import '../styles/product/product.scss';
@@ -71,7 +72,7 @@ const Product = (props) => {
         <div className='product'>
             <img src={props.itemImg} alt={props.name} className="product-image"/>
             <div className="product-info">
-                <h4 className="product-name">{props.name}</h4>
+                <Link to={`/categories/${props.category}/${props.name}`} className="product-name">{props.name}</Link>
                 <h4 className="product-price">{props.price}</h4>
             </div>
             <div className="product-buttons">

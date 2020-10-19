@@ -154,12 +154,12 @@ export const categories= [
         img: pets,
         subCategories: ["Food", "Toys"]
     },
-    {
-        id:8,
-        name: "Health and Beauty",
-        img: healthBeauty,
-        subCategories: ["First Aid", "Makeup"]
-    }
+    // {
+    //     id:8,
+    //     name: "Health and Beauty",
+    //     img: healthBeauty,
+    //     subCategories: ["First Aid", "Makeup"]
+    // }
 ]
 
 export const inventory = [

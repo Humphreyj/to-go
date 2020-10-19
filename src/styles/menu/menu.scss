@@ -37,6 +37,7 @@
     }
     //menu-navigation
     .category-box {
+        
         width: 60%;
         display: flex;
         flex-wrap: wrap;
@@ -48,6 +49,7 @@
         
         
         .individual-category {
+            background-color:white;
             font-family: 'Merriweather Sans', sans-serif;
             display: flex;
             flex-direction: column;

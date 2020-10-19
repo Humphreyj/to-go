@@ -4,10 +4,6 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className="newsletter_bar">
-                    <div className="newsletter-text-container">
-                        <h4 className="signup-header">SIGN UP FOR EXCLUSIVE OFFERS</h4>
-                        <p className="signup-text">Sign up to receive exclusive email-only savings & updates.</p>
-                    </div>
                     <div className="newsletter-input-container">
                         <input 
                          type="text"
@@ -15,6 +11,10 @@ const Footer = () => {
                          placeholder='Enter your email address'
                          />
                          <button className="newsletter-signup-button">Go</button>
+                    </div>
+                    <div className="newsletter-text-container">
+                        <h4 className="signup-header">SIGN UP FOR EXCLUSIVE OFFERS</h4>
+                        <p className="signup-text">Sign up to receive exclusive email-only savings & updates.</p>
                     </div>
                 </div>
             <div className="footer-links">
