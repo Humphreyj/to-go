@@ -26,19 +26,6 @@ import winecup from '../img/winecup.jpg'
 import napkins from '../img/napkins.jpg'
 import crackers from '../img/crackers.jpg'
 import solo from '../img/solo.jpg'
-//bakery photos
-import breadRolls from '../img/breadRolls.jpg'
-import frenchBread from '../img/frenchBread.jpg'
-import sandwichBread from '../img/sandwichBread.jpg'
-import sourdough from '../img/sourdough.jpg'
-import countryWhite from '../img/countryWhite.jpg'
-//bakery photos
-//pet photos
-import poopBags from '../img/poopBags.jpg'
-import lambDogToy from '../img/lambDogToy.jpg'
-import tennisBalls from '../img/tennisBalls.jpg'
-import dogFood from '../img/dogFood.jpg'
-//pet photos
 //collection photos
 import grilling from '../img/grillin.jpg'
 import prettyPantry from '../img/prettyPantry.jpg';
@@ -46,7 +33,6 @@ import entertaining from '../img/entertaining.jpg';
 import cleaning from '../img/cleaning.jpg';
 import fall from '../img/fall.jpg'
 import prepared from '../img/prepared.jpg'
-import popcorn from '../img/popcorn.jpg'
 //category images
 import pets from '../img/pets.jpg'
 import healthBeauty from '../img/health-beauty.jpg'
@@ -96,10 +82,10 @@ export const collections = [
     },
     {
         id:5,
-        name: "Movie Night",
-        img: popcorn
+        name: "Prepared Foods",
+        img: prepared
 
-    }
+    },
 
 ]
 
@@ -109,57 +95,48 @@ export const categories= [
     {
         id:0,
         name: "Dairy & Eggs",
-        img: dairyEggs,
-        subCategories: ["Butter", "Cheese"]
+        img: dairyEggs
     },
     {
         id:1,
         name: "Bakery",
-        img: bakery,
-        subCategories: ["Bread","Cookies"]
+        img: bakery
     },
     {
         id:2,
         name: "Produce",
-        img: produce,
-        subCategories: ["Fruits", "Vegetables"]
+        img: produce
     },
     {
         id:3,
         name: "Deli",
-        img: deli,
-        subCategories: ["Sliced Meats", "Cheese", "Dips"]
+        img: deli
     },
     {
         id:4,
         name: "Meat and Seafood",
-        img: meats,
-        subCategories: ["Beef","Chicken", "Shrimpies"]
+        img: meats
     },
     {
         id:5,
         name: "Home",
-        img: home,
-        subCategories: ["Cleaning", "Outdoor","Paper Goods"]
+        img: home
     },
     {
         id:6,
         name: "Pantry",
-        img: pantryItems,
-        subCategories: ["Chips", "Canned Foods"]
+        img: pantryItems
     },
     {
         id:7,
         name: "Pets",
-        img: pets,
-        subCategories: ["Food", "Toys"]
+        img: pets
     },
-    // {
-    //     id:8,
-    //     name: "Health and Beauty",
-    //     img: healthBeauty,
-    //     subCategories: ["First Aid", "Makeup"]
-    // }
+    {
+        id:8,
+        name: "Health and Beauty",
+        img: healthBeauty
+    }
 ]
 
 export const inventory = [
@@ -250,26 +227,6 @@ export const inventory = [
         itemQuantity: "20",
         name: "Oranges",
         itemImg: caracara,
-        collection: '',
-        inCart: 0
-    },
-    {
-        id: 0.9325340115943833678,
-        itemCategory: "Produce",
-        itemPrice: "1.5",
-        itemQuantity: "20",
-        name: "English Cucumbers",
-        itemImg: englishcuke,
-        collection: '',
-        inCart: 0
-    },
-    {
-        id: 0.932534022335943833678,
-        itemCategory: "Produce",
-        itemPrice: "1.5",
-        itemQuantity: "20",
-        name: "Good Apples",
-        itemImg: grannySmith,
         collection: '',
         inCart: 0
     },
@@ -422,97 +379,6 @@ export const inventory = [
         itemImg: solo,
         collection: 'Entertaining',
         inCart: 0
-    },
-    {
-        id: 0.93234521432345943832,
-        itemCategory: "Bakery",
-        itemPrice: "6",
-        itemQuantity: "22",
-        name: "Bag O' Rolls",
-        itemImg: breadRolls,
-        collection: 'Entertaining',
-        inCart: 0
-    },
-    {
-        id: 0.932345214323459438320861,
-        itemCategory: "Bakery",
-        itemPrice: "6",
-        itemQuantity: "22",
-        name: "French Bread",
-        itemImg: frenchBread,
-        collection: '',
-        inCart: 0
-    },
-    {
-        id: 0.93234521432345943832999,
-        itemCategory: "Bakery",
-        itemPrice: "6",
-        itemQuantity: "22",
-        name: "Sandwich Bread",
-        itemImg: sandwichBread,
-        collection: '',
-        inCart: 0
-    },
-    {
-        id: 0.932345214323459438323451,
-        itemCategory: "Bakery",
-        itemPrice: "6",
-        itemQuantity: "22",
-        name: "Sourdough",
-        itemImg: sourdough,
-        collection: '',
-        inCart: 0
-    },
-    {
-        id: 0.9328032521432345943832,
-        itemCategory: "Bakery",
-        itemPrice: "6",
-        itemQuantity: "22",
-        name: "Country White",
-        itemImg: countryWhite,
-        collection: '',
-        inCart: 0
-    },
-    {
-        id: 0.1111032521432345943832,
-        itemCategory: "Pets",
-        itemPrice: "6",
-        itemQuantity: "22",
-        name: "Dog Food",
-        itemImg: dogFood,
-        collection: '',
-        inCart: 0
-    },
-    {
-        id: 0.111103252178782345943832,
-        itemCategory: "Pets",
-        itemPrice: "6",
-        itemQuantity: "22",
-        name: "Lamby",
-        itemImg: lambDogToy,
-        collection: '',
-        inCart: 0
-    },
-    {
-        id: 0.11110325555578782345943832,
-        itemCategory: "Pets",
-        itemPrice: "6",
-        itemQuantity: "22",
-        name: "Tennis Balls",
-        itemImg: tennisBalls,
-        collection: '',
-        inCart: 0
-    },
-    {
-        id: 0.111103252178782345943832,
-        itemCategory: "Pets",
-        itemPrice: "6",
-        itemQuantity: "22",
-        name: "Some Bags",
-        itemImg: poopBags,
-        collection: '',
-        inCart: 0
-    },
-   
+    }
 ];
 
