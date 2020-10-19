@@ -25,6 +25,12 @@
 
         .product-name {
             margin: 0 auto;
+            color: black;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
         .product-price {
             margin: .5rem auto;
