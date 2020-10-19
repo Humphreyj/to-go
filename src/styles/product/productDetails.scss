@@ -1,14 +1,23 @@
 .product-details-container {
-    .item-path {
-        display: flex;
-        align-items: center;
-
-        .path-spacer {
-            margin: 5px 10px;
+    .product-details-info {
+        .item-path {
+            display: flex;
+            align-items: center;
+    
+            .path-spacer {
+                margin: 5px 10px;
+            }
+        }
+        .item-image {
+            width: 250px;
+            height: 250px;
+        }
+        .product-description {
+            @media(max-width: 500px) {
+                margin-bottom: 250px;
+            }
         }
     }
-    .item-image {
-        width: 250px;
-        height: 250px;
-    }
+    
+    
 }
