@@ -24,13 +24,6 @@ const Menu = () => {
                         <div className="individual-category">
                             <img className='individual-category-image' src={cat.img} alt=""/>
                             <Link to={`/categories/${cat.name}`} className='individual-category-name'>{cat.name}</Link>
-                            <div className="sub-categories">
-                                {cat.subCategories.map((subCat,i) => {
-                                    return(
-                                        <p className="sub-category">{subCat}</p>
-                                    )
-                                })}
-                            </div>
                         </div>
                         
                     )
