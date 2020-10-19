@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useContext,useState,useEffect} from 'react';
 import {ToastContainer} from 'react-toastify';
 import Navigation from './components/navigation/Navbar';
 import MobileNav from './utils/MobileNav';
@@ -7,9 +7,12 @@ import Footer from './components/footer/Footer';
 import Routes from './utils/routes/Routes';
 import ItemContext from './contexts/ItemContext';
 import UIC from './contexts/UIC';
+import CoinContext from './contexts/CoinContext';
 import {categories, inventory,collections} from './data/products';
 import './App.css';
+import axios from 'axios';
 import './styles/global.scss';
+import { Route } from 'react-router-dom';
 import CartContext from './contexts/CartContext';
 import 'react-toastify/dist/ReactToastify.css';
 
