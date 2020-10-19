@@ -1,4 +1,5 @@
 import React,{useContext} from 'react';
+import {Link} from 'react-router-dom'
 import ItemContext from '../../contexts/ItemContext';
 import Product from '../../utils/Product';
 
@@ -10,6 +11,9 @@ const Category = (props) => {
     console.log(menu_by_category)
     return (
         <div className='category-main'>
+            <div className="category-path">
+                    <Link to='/shop'>Categories</Link> <p className="path-spacer"> -- </p><Link to={`/categories/${target_category}`}>{target_category}</Link>
+                </div>
             <div className="category-info">
             {shopCategories.map(category => {
                     if (category.name == target_category) {

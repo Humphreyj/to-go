@@ -8,6 +8,14 @@
     @media(max-width: 500px) {
         margin-bottom: 150px;
     }
+    .category-path {
+        display: flex;
+            align-items: center;
+    
+            .path-spacer {
+                margin: 5px 10px;
+            }
+    }
     .category-info{
         display: flex;
         align-items: center;
