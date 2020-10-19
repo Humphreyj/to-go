@@ -12,6 +12,7 @@ const ProductDetails = (props) => {
             <h1>{target_item.name}</h1>
             <img src={target_item.itemImg} alt=""/>
             <p className="item-price">${target_item.itemPrice}</p>
+            <p className="product-description">Put prodcut description here.</p>
         </div>
     );
 }
