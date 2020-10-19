@@ -10,4 +10,58 @@
     padding: 2%;
     width: 90%;
     margin: 0 auto;
+    .thank-you {
+        font-size: 1.4em;
+    }
+    .your-total {
+        font-size: 1.2em;
+    }
+    .confirmation {
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .confirm-button {
+        margin: 10px 15px;
+        height: 30px;
+        border-radius: 6px;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    @media(min-width: 700px) {
+        width: 75%;
+        .thank-you {
+            font-size: 1.8em;
+        }
+        .your-total {
+            font-size: 1.6em;
+        }
+        .confirmation {
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .confirm-button {
+            font-size: 1.4em;
+            
+        }
+    }//700px
+    @media(min-width: 1200px) {
+        width: 50%;
+        .thank-you {
+            font-size: 2.2em;
+        }
+        .your-total {
+            font-size: 2em;
+        }
+        .confirmation {
+            text-align: center;
+            font-size: 1.7em;
+        }
+        .confirm-button {
+            margin: 10px 15px;
+            height: 40px;
+            font-size: 1.8em;
+            
+        }
+    }
 }

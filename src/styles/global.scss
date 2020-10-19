@@ -13,14 +13,16 @@
 @import './cart/productInCart.scss';
 
 //menu
-@import './menu/categories.scss';
-@import './menu/collections.scss';
+@import './menu/category.scss';
+@import './menu/collection.scss';
+@import './menu/all-collections.scss';
 @import './menu/featuredItem.scss';
 @import './menu/menu.scss';
 
 //product
 //price
 @import './product/product.scss';
+@import './product/productDetails.scss';
 
 //price
 @import './price/price.scss';
