@@ -1,0 +1,38 @@
+.product-reviews {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    .review {
+        margin: 10px 0;
+        p {
+            margin: 0;
+        }
+        .title-and-rating {
+            .review-title {
+                font-size: 1.2em;
+            }
+            .stars {
+                font-size: 1.4em;
+            }
+        }
+        .review-author {
+            font-size: .8em;
+
+        }
+        .review-content {
+            margin: 0;
+        }
+        
+    }
+    .add-review {
+        margin: 10px auto;
+        width: 60%;
+        font-size: 1.2em;
+        padding: 2%;
+    }
+    @media(max-width: 500px) {
+        margin-bottom: 200px;
+    }
+}

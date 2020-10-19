@@ -11,7 +11,7 @@ const Splash = () => {
                 </div>
             </div>
             <p className='store-description'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo totam repellat, libero delectus quam a, consequuntur ipsa eius eos, aliquid temporibus ducimus quia ratione fugit.</p>
-            <Link to='/menu'><button className="see-menu">See Our Products</button></Link>
+            <Link to='/shop'><button className="see-menu">See Our Products</button></Link>
            
            <div className="banner-two">
                 <div className="showcase-text">

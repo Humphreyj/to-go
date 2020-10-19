@@ -14,7 +14,7 @@ const Navbar = () => {
             <h1 className='nav-title'>Local Market</h1>
             <nav>
                 <Link className='desktop-link' to='/'>Home</Link>
-                <Link className='desktop-link' to='/menu'>Menu</Link>
+                <Link className='desktop-link' to='/shop'>Shop</Link>
                 <Link to='/cart'><i className="fas fa-shopping-cart"></i></Link>
             </nav>
         </div>

@@ -14,7 +14,7 @@ const Routes = props => {
     return (
         <>
             <Route exact path='/' component={Splash} />
-            <Route path='/menu' component={Menu} />
+            <Route path='/shop' component={Menu} />
             <Route exact path='/collections' component={Collections} />
             <Route path='/collections/:collection' component={Collection} />
             <Route exact path='/categories/:category' component={Category} />

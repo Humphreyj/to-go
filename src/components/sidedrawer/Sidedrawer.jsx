@@ -8,11 +8,11 @@ const Sidedrawer = () => {
         <div className={sideDrawerOpen ? 'sidedrawer open' : 'sidedrawer'}>
             <Link onClick={()=>setSideDrawerOpen(false)} className='side-link' to='/'>Home</Link>
 
-            <Link onClick={()=>setSideDrawerOpen(false)} className='side-link' to='/menu'>Menu</Link>
+            <Link onClick={()=>setSideDrawerOpen(false)} className='side-link' to='/shop'>Menu</Link>
 
             <Link onClick={()=>setSideDrawerOpen(false)} className='side-link' to='/cart'><i className="fas fa-shopping-cart"></i></Link>
 
-            <Link onClick={()=>setSideDrawerOpen(false)} className='side-link' to='/admin'>Admin</Link>
+            {/* <Link onClick={()=>setSideDrawerOpen(false)} className='side-link' to='/admin'>Admin</Link> */}
         </div>
     );
 }
