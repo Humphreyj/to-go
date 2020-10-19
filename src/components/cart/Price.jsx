@@ -11,7 +11,6 @@ const Price = () => {
     const checkout = () => {
         console.log(cart)
         setCheckingOut(true)
-        window.scrollTo(0, 0)
         setShopOrders([...shopOrders,cart]);
         // setCart(cart => [])
     } 

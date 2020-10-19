@@ -6,7 +6,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        width: 50%;
+        width: 75%;
         margin: 0 auto;
         @media(max-width:500px) {
             flex-direction: column;
@@ -37,8 +37,5 @@
                 
             }
         }
-    }
-    @media(max-width: 500px) {
-        margin-bottom: 150px;
     }
 }

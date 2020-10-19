@@ -25,18 +25,7 @@
         align-items: center;
         justify-content: space-between;
         width: 75%;
-        @media(max-width:500px) {
-            width: 90%;
-        }
-        .product {
-            @media(max-width:500px) {
-                width: 46%;
-            }
-        }
 
         
-    }
-    @media(max-width:500px) {
-        margin-bottom: 150px;
     }
 }
