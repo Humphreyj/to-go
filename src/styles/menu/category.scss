@@ -10,11 +10,17 @@
     }
     .category-path {
         display: flex;
-            align-items: center;
-    
-            .path-spacer {
-                margin: 5px 10px;
-            }
+        align-items: center;
+
+        .path-spacer {
+            margin: 5px 10px;
+            color: black;
+            font-size: 1.2em;
+        }
+        a {
+            color: black;
+            font-size: 1.2em;
+        }
     }
     .category-info{
         display: flex;

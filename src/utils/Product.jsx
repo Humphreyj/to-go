@@ -66,13 +66,16 @@ const Product = (props) => {
     
         
     }
+    const toTop = () => {
+        window.scrollTo(0, 0)
+    }
     
     
     return (
         <div className='product'>
             <img src={props.itemImg} alt={props.name} className="product-image"/>
             <div className="product-info">
-                <Link to={`/categories/${props.category}/${props.name}`} className="product-name">{props.name}</Link>
+                <Link to={`/categories/${props.category}/${props.name}`} className="product-name" onClick={toTop}>{props.name}</Link>
                 <h4 className="product-price">{props.price}</h4>
             </div>
             <div className="product-buttons">

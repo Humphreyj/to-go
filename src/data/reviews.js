@@ -13,7 +13,7 @@ export const product_reviews = [
         item_name: "Item Name",
         rating: 2,
         review_title: "Really disappointed...",
-        review_author: "Richard Toucher",
+        review_author: "Richard Lewis",
         review_content: `This was a bad product.`
 
     },
