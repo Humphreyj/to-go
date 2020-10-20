@@ -6,8 +6,15 @@
     .item-path {
         display: flex;
         align-items: center;
+        
         .path-spacer {
             margin: 5px 10px;
+            color: black;
+            font-size: 1.2em;
+        }
+        a {
+            color: black;
+            font-size: 1.2em;
         }
     }
     .product-details-inner-container {
@@ -17,7 +24,6 @@
         width: 60%;
         margin-top: 25px;
         padding: 2%;
-        
         align-items: center;
         .product-details-info {
             
