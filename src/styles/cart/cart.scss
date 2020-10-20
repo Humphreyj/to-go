@@ -8,6 +8,11 @@
     .review {
         text-decoration: underline;
         padding-left: 2em;
+        @media(max-width: 500px) {
+            padding-left: 0;
+            text-align: center;
+            font-size: 1.2em;
+        }
 
     }
     .cart-products {
