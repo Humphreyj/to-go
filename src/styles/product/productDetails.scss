@@ -31,7 +31,11 @@
                 width: 250px;
                 height: 250px;
             }
+            .item-price {
+                font-size: 1.3em;
+            }
             .product-description {
+                font-size: 1.3em;
                 @media(max-width: 500px) {
                     margin-bottom: 25px;
                 }

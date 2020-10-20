@@ -1,15 +1,26 @@
 .cart {
     position: relative;
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
     .review {
         text-decoration: underline;
         padding-left: 2em;
+        @media(max-width: 500px) {
+            padding-left: 0;
+            text-align: center;
+            font-size: 1.2em;
+        }
 
     }
     .cart-products {
         border-top: 1px solid black;
         padding: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .no-items {
             padding-top: 5rem;
             width: 80%;

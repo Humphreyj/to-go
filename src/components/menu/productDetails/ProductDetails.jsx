@@ -84,8 +84,8 @@ const ProductDetails = (props) => {
                 <div className="product-details-info">
                     <h1>{target_item.name}</h1>
                     <img className="item-image" src={target_item.itemImg} alt=""/>
+                    <p className="product-description">{target_item.description}</p>
                     <p className="item-price">${target_item.itemPrice}</p>
-                    <p className="product-description">Put product description here.</p>
                     <div className="product-detail-buttons">
                         {itemUnavailable ? <button 
                     className="out-of-stock"

@@ -21,7 +21,7 @@ const ProductReviews = (props) => {
             <Backdrop
             show={leavingReview} 
             />
-            <p className="review-heading">Reviews for {props.name}</p>
+            <p className="review-heading">Recent reviews for {props.name}</p>
             {product_reviews.map(review => {
             return (
                 

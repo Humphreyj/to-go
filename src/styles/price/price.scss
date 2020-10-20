@@ -17,5 +17,8 @@
         font-size: 1.5em;
         border: none;
         border-radius: 6px;
+        @media(max-width: 500px) {
+            margin-bottom: 50px;
+        }
     }
 }
