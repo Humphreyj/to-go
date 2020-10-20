@@ -11,7 +11,7 @@ const CheckoutModal = (props) => {
     const completeCheckout =() => {
         props.setCheckingOut(false)
         setCart(cart => []);
-        window.location ='/menu';
+        window.location ='/shop';
     }
     return (
         <>

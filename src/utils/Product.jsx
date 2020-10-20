@@ -80,7 +80,7 @@ const Product = (props) => {
             {itemUnavailable ? <button 
                 className="out-of-stock"
                 onClick={addToCart}
-                >Out Of Stock</button> :     <button 
+                >Out Of Stock</button> : <button 
                 className="add-to-cart"
                 onClick={addToCart}
                 >Add to Cart</button>}

@@ -1,0 +1,38 @@
+.related-products-container {
+    width: 60%;
+    padding: 2%;
+    background-color: white;
+    margin-bottom: 100px;
+    .related-products-heading {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .related-products {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        .product {
+
+        }
+        @media(max-width: 500px) {
+            .product {
+                width: 65%;
+                padding: 10px 0;
+                .product-image {
+                    width: 40%;
+                }
+                .add-to-cart {
+                    margin-bottom: 10px; 
+                }
+            }
+        }
+
+    }
+    
+    @media(max-width: 500px) {
+        width: 90%;
+        margin-bottom: 200px;
+    }
+    
+}
