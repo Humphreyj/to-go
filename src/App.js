@@ -7,7 +7,7 @@ import Footer from './components/footer/Footer';
 import Routes from './utils/routes/Routes';
 import ItemContext from './contexts/ItemContext';
 import UIC from './contexts/UIC';
-import {categories, inventory,collections} from './data/products';
+import {categories, inventory,collections,featured,featuredCollections} from './data/products';
 import './App.css';
 import './styles/global.scss';
 import CartContext from './contexts/CartContext';
@@ -18,6 +18,8 @@ function App() {
  const [shopInventory, setShopInventory] =useState(inventory)
  const [shopCategories, setShopCategories]=useState(categories)
  const [shopCollections, setShopCollections]=useState(collections)
+ const [currentlyFeatured,setCurrentlyFeatured] =useState(featured);
+ const [currentlyFeaturedCollections] = useState(featuredCollections)
  const [shopOrders, setShopOrders] =useState([])
  const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
@@ -38,7 +40,7 @@ function App() {
 
 }
   return (
-    <ItemContext.Provider value={{shopInventory,setShopInventory,shopCategories,setShopCategories,shopCollections, setShopCollections,shopOrders,setShopOrders}}>
+    <ItemContext.Provider value={{shopInventory,setShopInventory,shopCategories,setShopCategories,shopCollections, setShopCollections,shopOrders,setShopOrders,currentlyFeatured,currentlyFeaturedCollections}}>
         <CartContext.Provider value={{cart,setCart,total,setTotal,getTotalPrice}}>
           <UIC.Provider value={{sideDrawerOpen, setSideDrawerOpen}}>
             <div className="App">

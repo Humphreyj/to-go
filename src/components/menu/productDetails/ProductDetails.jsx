@@ -106,7 +106,7 @@ const ProductDetails = (props) => {
             category ={target_item.itemCategory}
             name={target_item.name}
                 
-                />
+            />
         </div>
     );
 }

@@ -1,0 +1,41 @@
+.featured-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 20px;
+    
+
+    .carousel-container {
+        width: 80%;
+        height: 16em;
+        
+        .product {
+            padding: 30px;
+            width: 65%;
+            height: 12rem;
+            
+
+        }
+    }
+
+  @media(max-width:500px) {
+      margin-bottom: 100px;
+  }
+}
+
+.carousel-button-group {
+    width: 65%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    .fa-2x {
+        border:none;
+        border-radius: 8px;
+        background-color: white;
+        &:hover {
+            background-color:rgb(232, 232, 232);
+            box-shadow: 2px 1px 1px #ddd;
+        };
+    }
+}

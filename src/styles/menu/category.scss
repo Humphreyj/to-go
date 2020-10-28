@@ -6,7 +6,7 @@
     padding: 2% 0;
     margin-bottom: 100px;
     @media(max-width: 500px) {
-        margin-bottom: 150px;
+        margin-bottom: 200px;
     }
     .category-path {
         display: flex;
@@ -43,7 +43,6 @@
     }//category-info
 
     .category-items {
-        background-color: #F7F7F7;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
