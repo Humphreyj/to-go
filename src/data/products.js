@@ -194,7 +194,7 @@ export const categories= [
         id:3,
         name: "Deli",
         img: deli,
-        subCategories: ["Sliced Meats", "Cheese", "Dips"]
+        subCategories: ["Sliced Meats","Dips"]
     },
     {
         id:4,
@@ -1157,4 +1157,86 @@ export const inventory = [
     },
    
 ];
+
+
+
+export const featured = [
+    {
+        id: 0.00002803252143234594383248566744,
+        itemCategory: "Bakery",
+        itemPrice: "6",
+        itemQuantity: "22",
+        name: "Candy Cookies",
+        itemImg: candyCookies,
+        collection: '',
+        description: "Are they shaped like pigs or hippos?.",
+        inCart: 0
+    },
+    {
+        id: 0.9325365432345943832,
+        itemCategory: "Home",
+        itemPrice: "6",
+        itemQuantity: "22",
+        name: "Glasses",
+        itemImg: winecup,
+        collection: 'Entertaining',
+        description: "These are great for holding liquid.",
+        inCart: 0
+    },
+    {
+        id: 0.94353412159438334114,
+        itemCategory: "Dairy & Eggs",
+        itemPrice: "5",
+        itemQuantity: "2",
+        name: "Snack Pack",
+        itemImg: snackPack,
+        collection: '',
+        description: "This is the only flavor.",
+        inCart: 0
+    },
+    {
+        id: 0.9325340854564378675943833678,
+        itemCategory: "Produce",
+        itemPrice: "1.5",
+        itemQuantity: "20",
+        name: "Red Grapes",
+        itemImg: redGrapes,
+        collection: '',
+        description: "These grapes are red.",
+        inCart: 0
+    },
+    {
+        id: 0.87360044011594383366,
+        itemCategory: "Deli",
+        itemPrice: "2",
+        itemQuantity: "20",
+        name: "Turkey",
+        itemImg: turkey,
+        collection: '',
+        description: "Not just for Thanksgiving, but it primarily is.",
+        inCart: 0
+    },
+]
+
+export const featuredCollections = [
+    {
+        id:0,
+        name: "Entertaining",
+        img: entertaining
+
+    },
+    {
+        id:1,
+        name: "Seasonal",
+        img: fall
+
+    },
+    {
+        id:2,
+        name: "Movie Night",
+        img: popcorn
+
+    }
+
+]
 

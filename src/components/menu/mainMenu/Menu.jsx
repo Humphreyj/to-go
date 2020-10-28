@@ -7,7 +7,7 @@ import ItemContext from '../../../contexts/ItemContext';
 
 
 import '../../../styles/menu/menu.scss'
-import FeaturedItem from './FeaturedItem'
+
 
 const Menu = () => {
     const {shopCategories, shopInventory} = useContext(ItemContext)

@@ -9,13 +9,13 @@
     background-color: white;
     width: 100%;
     .product-in-cart-info {
-        width: 60%;
+        width: 80%;
         
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         .product-in-cart-image {
-            width: 25%;
+            width: 20%;
             
         }
         .product-in-cart-name {
@@ -77,6 +77,6 @@
     }
     
     @media(min-width: 1400px) {
-        width: 60%;
+        width: 80%;
     }
 }//productincart

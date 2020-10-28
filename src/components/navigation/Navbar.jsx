@@ -8,15 +8,14 @@ const Navbar = () => {
         setAdminIsHidden(!adminIsHidden)
     }
     return (
-        <div 
-        onDoubleClick={toggleAdmin}
-        className='navigation'>
+        <div className='navigation'>
             <h1 className='nav-title'>Local Market</h1>
             <nav>
                 <Link className='desktop-link' to='/'>Home</Link>
                 <Link className='desktop-link' to='/shop'>Shop</Link>
                 <Link to='/cart'><i className="fas fa-shopping-cart"></i></Link>
             </nav>
+            
         </div>
     );
 }
