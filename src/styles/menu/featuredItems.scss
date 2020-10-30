@@ -2,35 +2,90 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 90%;
+    margin: 0 auto;
     padding: 20px;
+    @media(min-width: 1400px) {
+        width: 60%
+    }
+    
+    
     
 
     .carousel-container {
         width: 80%;
         height: 16em;
+        border: .5px solid black;
+       
         
         .product {
-            padding: 30px;
+            padding: 10px;
             width: 65%;
             height: 12rem;
+            .product-image {
+                width: 100px;
+                height: 100px;
+            }
+            .product-name {
+                font-size: .8em;
+            }
+            .product-price {
+                margin: .5rem auto;
+                font-size: 1em;
+            }
             
+            .product-buttons {
+                button {
+                    margin: 0 1rem;
+                    position: relative;
+                    border: none;
+                    border-radius: 6px;
+                    font-size: .8em;
+                    height: 2rem;
+                    font-weight: bold;
+                    box-shadow: 1.5px 1.5px 1.5px #333;
 
+                    &:hover {
+                        top: 1.5px;
+                    }
+                }
+                .add-to-cart {
+                    background-color: rgba(18, 183, 3, 0.7);
+                    font-weight: bold;
+                    color: white; 
+                }
+                .add-to-cart:active {
+                    background-color: rgba(18, 183, 3, 1);
+                    
+                }
+        
+                .out-of-stock {
+                    background-color: rgba(247, 7, 23, .9);;
+                    color: white;
+                }
+            }
         }
     }
 
-  @media(max-width:500px) {
-      margin-bottom: 100px;
-  }
+  
 }
 
 .carousel-button-group {
-    width: 65%;
+    width: 76%;
     position: absolute;
     display: flex;
     justify-content: space-between;
+    z-index: 100;
+    pointer-events: none;
+    @media(min-width: 1400px) {
+        width: 48%
+    }
+    @media(max-width: 500px) {
+        width: 65%;
+      }
     .fa-2x {
         border:none;
+        pointer-events: auto;
         border-radius: 8px;
         background-color: white;
         &:hover {

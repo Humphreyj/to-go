@@ -4,10 +4,6 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 75px;
-    @media(max-width: 500px) {
-        margin-bottom: 150px;
-    }
-    
     .shop-by-category {
         font-size: 2em;
     }
@@ -99,9 +95,5 @@
             font-size: 1.5em;
         }
     }
-    @media(max-width: 800px) {
-        margin-bottom: 150px;
-    }
-    
 }
 

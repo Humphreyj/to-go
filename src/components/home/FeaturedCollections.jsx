@@ -7,19 +7,21 @@ const FeaturedCollections = () => {
     const {currentlyFeaturedCollections} = useContext(ItemContext)
     return (
         <div className='featured-collections-container'>
-            <h4 className="featured-collections-header">Shop our featured collections</h4>
-            <div className='featured-collections'>
                 {currentlyFeaturedCollections.map((collection,i) => {
                      return(
                         <div className="collections-div">
                             <img className="collection-thumbnail" src={collection.img} alt=""/>
-                            <Link className="collection-name" to={`/collections/${collection.name}`}>{collection.name}</Link>
+                            <div className="collection-summary">
+                                <h4 className="collection-name" to={`/collections/${collection.name}`}>{collection.name}</h4>
+                                <p className="collection-decsription">{collection.description}</p>
+                                <Link className="collection-link" to={`/collections/${collection.name}`}>
+                                    <button>Shop {collection.name}</button>
+                                </Link>
+                            </div>
+                            
                         </div>
                     )
                 })}
-            </div>
-            
-            
         </div>
     );
 }

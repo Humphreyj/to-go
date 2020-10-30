@@ -7,13 +7,14 @@ import FeaturedCollections from '../home/FeaturedCollections';
 const Splash = () => {
     return (
         <div className ='splash-page'>
-            <div className="apples">
+            <div className="showcase">
                 <div className="showcase-text">
                     <p>The most Amazing Local Market Ever.</p>
+                    <Link to='/shop'><button className="shop-now">Shop Now</button></Link>
                 </div>
             </div>
 
-            <Link to='/shop'><button className="shop-now">Shop Now</button></Link>
+            
 
             <div className="weekly-savings">
                 <div className="coupon-container">
@@ -23,7 +24,8 @@ const Splash = () => {
                 </div>
             </div>
             <FeaturedCollections />
-            <h4 className="featured-header">Today's featured items</h4>
+            
+            <FeaturedItems />
             <FeaturedItems />
 
             

@@ -1,12 +1,10 @@
-import React,{useContext,useEffect,useState} from 'react';
+import React,{useContext,useState} from 'react';
 import CartContext from '../../contexts/CartContext';
-import ProductInCart from '../../utils/ProductInCart';
 import Backdrop from '../../utils/Backdrop';
 
 
 const CheckoutModal = (props) => {
-    const {cart,setCart, total}=useContext(CartContext);
-    const [backdrop,setBackdrop]=useState(true)
+    const {setCart, total}=useContext(CartContext);
 
     const completeCheckout =() => {
         props.setCheckingOut(false)
