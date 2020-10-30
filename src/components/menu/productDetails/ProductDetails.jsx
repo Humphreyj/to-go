@@ -2,7 +2,7 @@ import React,{useState,useEffect,useContext} from 'react';
 import {Link} from 'react-router-dom';
 import ItemContext from '../../../contexts/ItemContext';
 import CartContext from '../../../contexts/CartContext';
-import {ToastContainer, toast} from 'react-toastify';
+import {toast} from 'react-toastify';
 
 import ProductReviews from './ProductReviews';
 import RelatedProducts from './RelatedProducts';
@@ -54,7 +54,7 @@ const ProductDetails = (props) => {
             setItemUnavailable(true)
             itemIsUnavailable()
         }else {
-            if(cart.indexOf(target_item) == -1) {
+            if(cart.indexOf(target_item) === -1) {
                 setItemUnavailable(false)
                 target_item.inCart +=1;
                 target_item.itemQuantity -= 1;

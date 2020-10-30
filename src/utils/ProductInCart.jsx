@@ -6,7 +6,7 @@ const Product = (props) => {
     const [quantity,setQuantity] =useState(props.inCart)
     const [itemTotal, setItemTotal] =useState(props.price * quantity);
     const [outOfStock,setOutOfStock] = useState(false)
-    const {cart, setCart,total,setTotal,getTotalPrice} = useContext(CartContext);
+    const {cart, setCart,setTotal,getTotalPrice} = useContext(CartContext);
     const removeFromCart = (name) => {
             setCart(cart.filter(item => item.name !== name))
             props.item.itemQuantity += props.item.inCart 

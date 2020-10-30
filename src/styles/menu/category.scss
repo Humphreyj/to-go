@@ -5,9 +5,6 @@
     justify-content: center;
     padding: 2% 0;
     margin-bottom: 100px;
-    @media(max-width: 500px) {
-        margin-bottom: 200px;
-    }
     .category-path {
         display: flex;
         align-items: center;

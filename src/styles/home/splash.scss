@@ -2,28 +2,62 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
+  
 
-  .apples {
+  .showcase {
       background: url('../../img/banner.jpg')center no-repeat;
       background-size: cover;
-      height: 15em;
-      width: 75%;
-      margin: 20px auto;
-      overflow: hidden;
+      border-radius: 12px;
+      height: 22.5em;
+      margin: 45px 0 35px 0;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      
+      @media(min-width: 1400px) {
+        width: 75%;
+      }
 
       .showcase-text {
         background-color: rgba(25, 25, 25, 0.7);
+        border-radius: 12px;
         padding: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         p {
+          margin: 0;
           color: white;
           font-weight: bold;
           font-size: 1.5em;
           text-align: center;
+          @media(max-width: 500px) {
+            font-size: 1.2em;;
+          }
+        }
+        .shop-now {
+          margin: 1em 0;
+          padding: 2%;
+          
+          border-radius: 6px;
+          font-size: 1.8em;
+          color: white;
+          background-color: rgba(247, 7, 23, .9);
+          text-shadow: 0px 2px 2px #000;
+          cursor: pointer;
+          position: relative;
+
+          &:hover {
+            top: 1.5px;
+          }
+
+          @media(max-width: 500px) {
+            font-size: 1.2em;;
+          }
+          
         }
       }
   }
@@ -33,6 +67,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 35px 0;
     background: rgb(238,49,36);
     background: radial-gradient(circle, rgba(238,49,36,1) 0%, rgba(204,3,3,1) 100%);
     .coupon-container {
@@ -50,6 +85,7 @@
         font-size: .9em;
       }
       button {
+        position: relative;
         background-color: white;
         font-size: 1em;
         border-radius: 6px;
@@ -58,94 +94,10 @@
         margin: 10px 0;
         &:hover {
           background-color:rgb(232, 232, 232);
+          top: 1.5px;
         }
         
       }
     }
   }
-
-  .shop-now {
-    margin: 1em 0;
-    padding: 2%;
-    width: 18rem;
-    border-radius: 6px;
-    font-size: 1.8em;
-    color: white;
-    background-color: rgba(247, 7, 23, .9);
-    text-shadow: 0px 2px 2px #000;
-    
-  }
-
-  .banner-two {
-    background: url('../../img/banner2.jpg')center no-repeat;
-    background-size: cover;
-    height: 15em;
-    width: 75%;
-    margin: 30px auto;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    .showcase-text {
-      background-color: rgba(25, 25, 25, 0.7);
-      padding: 1%;
-      p {
-        color: white;
-        font-weight: bold;
-        font-size: 1.5em;
-        text-align: center;
-      }
-    }
-}
-
-.featured-header {
-    margin: 0;
-    font-size: 1.6em;
-}
-
-
-@media(max-width: 500px) {
-  .apples {
-    width: 100%;
-  }
-  .banner-two {
-    width: 100%;
-  } 
-}
-
-
-  @media(min-width: 700px) {
-    .apples {
-      margin: 15px auto;
-      height: 18em;
-      .showcase-text {
-         p{
-          font-size: 1.9em;
-          }
-      }
-    }
-    .banner-two {
-      height: 18em;
-    }
-    
-  }//700 px
-
-  @media(min-width: 1200px) {
-    .apples {
-      margin: 20px auto;
-     
-    }
-  }//1200px
-
-  @media(min-width: 1400px) {
-    .apples {     
-      height: 30em;
-    }
-    .banner-two {
-      height: 25em;
-    } 
-  }//1400px
-
 }

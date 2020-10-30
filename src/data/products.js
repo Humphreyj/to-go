@@ -86,7 +86,6 @@ import juliosSalsa from '../img/juliosSalsa.jpg'
 import guacatillo from '../img/guacatillo.jpg'
 import turkey from '../img/turkey.jpg'
 import salami from '../img/salami.jpg';
-import ham from '../img/ham.jpg';
 import fancyTurkey from '../img/fancyTurkey.jpg'
 import roastBeef from '../img/roastBeef.jpg'
 import muha from '../img/muha.jpg';
@@ -111,11 +110,9 @@ import prettyPantry from '../img/prettyPantry.jpg';
 import entertaining from '../img/entertaining.jpg';
 import cleaning from '../img/cleaning.jpg';
 import fall from '../img/fall.jpg'
-import prepared from '../img/prepared.jpg'
 import popcorn from '../img/popcorn.jpg'
 //category images
 import pets from '../img/pets.jpg'
-import healthBeauty from '../img/health-beauty.jpg'
 import home from '../img/home-outdoor.jpg'
 import pantryItems from '../img/pantryItems.jpg'
 import deli from '../img/deli.jpg'
@@ -134,36 +131,68 @@ export const collections = [
     {
         id:0,
         name: "Grilling",
-        img: grilling
+        img: grilling,
+        description: "Everything you need to get grillin'"
     },
     {
         id:1,
         name: "Essentials",
-        img: prettyPantry
+        img: prettyPantry,
+        description: "Everything you need for everyday"
 
     },
     {
         id:2,
         name: "Entertaining",
-        img: entertaining
+        img: entertaining,
+        description: "Be prepared for Holiday gatherings"
 
     },
     {
         id:3,
         name: "Cleaning",
-        img: cleaning
+        img: cleaning,
+        description: "Be prepared for Holiday gatherings"
 
     },
     {
         id:4,
         name: "Seasonal",
-        img: fall
+        img: fall,
+        description: "This will change based on season"
 
     },
     {
         id:5,
         name: "Movie Night",
-        img: popcorn
+        img: popcorn,
+        description: "Cozy up with some classics"
+
+    }
+
+]
+
+export const featuredCollections = [
+    {
+        id:0,
+        name: "Entertaining",
+        img: entertaining,
+        description: "Be prepared for Holiday gatherings"
+
+
+    },
+    {
+        id:1,
+        name: "Seasonal",
+        img: fall,
+        description: "This will change based on season"
+
+    },
+    {
+        id:2,
+        name: "Movie Night",
+        img: popcorn,
+        description: "Cozy up with some classics"
 
     }
 
@@ -1218,25 +1247,5 @@ export const featured = [
     },
 ]
 
-export const featuredCollections = [
-    {
-        id:0,
-        name: "Entertaining",
-        img: entertaining
 
-    },
-    {
-        id:1,
-        name: "Seasonal",
-        img: fall
-
-    },
-    {
-        id:2,
-        name: "Movie Night",
-        img: popcorn
-
-    }
-
-]
 

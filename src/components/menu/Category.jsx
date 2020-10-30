@@ -16,7 +16,7 @@ const Category = (props) => {
                 </div>
             <div className="category-info">
             {shopCategories.map(category => {
-                    if (category.name == target_category) {
+                    if (category.name === target_category) {
                     return( <img className='target_category_image' src={category.img} alt=""/>)
                     }
                 })}

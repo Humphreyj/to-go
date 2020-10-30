@@ -1,44 +1,90 @@
 .featured-collections-container {
-    width: 100%;
+    width: 80%;
+    margin: 35px auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    .featured-collections-header {
-        font-size: 1.6em;
-    }
-    .featured-collections {
-        display: flex;
-        align-items: center;
-        border-radius: 6px;
-        margin: 20px auto;
-        @media(max-width:500px) {
-            width: 100%;
-        }
-
+    
         .collections-div {
-            border: 1px solid black;
-            border-radius: 6px;
-            margin: 0 20px;
+            min-height: 22em;
+            margin: 0 15px;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
             .collection-thumbnail {
-                width: 200px;
-                height: 175px;
+                height: 300px;
+                width: 300px;
+                border-radius: 25px;
+                @media(min-width:1400px) {
+                    height: 350px;
+                    width: 350px;
+                    
+                }
+                @media(max-width:800px) {
+                    height: 200px;
+                    width: 200px;
+                }
                 @media(max-width:500px) {
-                    width: 125px;
-                    height: 100px;
+                    width: 80%;
                 }
             }
-            .collection-name {
-                font-size: 1.4em;
-                color: black;
+            .collection-summary {
+                width: 100%;
+                .collection-name {
+                    font-size: 1.4em;
+                    color: black;
+                    margin: 0;
+                    
+                }
+                .collection-decsription {
+                    margin: 3px 0 4px 0;
+                }
+                .collection-link {
+                    button {
+                        border: none;
+                        color: white;
+                        background-color: rgba(247, 7, 23, .9);
+                        padding: 3% 2%;
+                        border-radius: 6px;
+                        margin-bottom: 10px;
+                        position: relative;
+                        &:hover {
+                            top: 1.5px;
+                            background-color:rgb(188, 188, 188);
+                        }
+                    }
+                    
+                }
+            }
+            @media(max-width:500px) {
+                width: 90%;
+                min-height: auto;
+                align-items: center;
+                .collection-summary {
+                    width: 60%;
+                    text-align: center;
+                }
+                .collection-link button {
+                    width: 100%;
+                }
                 
             }
+            @media(min-width:1400px) {
+               
+                
+            }
+            
         }
+        
+  
+    @media(min-width:1400px) {
+        width: 75%;
+        margin: 35px auto;
+    }
+    
+    @media(max-width:500px) {
+        width: 100%;
+        flex-direction: column;
         
     }
 }

@@ -5,7 +5,7 @@ import ItemContext from '../../contexts/ItemContext';
 import CheckoutModal from './CheckoutModal';
 
 const Price = () => {
-    const {cart,setCart,total,setTotal,getTotalPrice} = useContext(CartContext);
+    const {cart,total,getTotalPrice} = useContext(CartContext);
     const{shopOrders,setShopOrders} = useContext(ItemContext);
     const [checkingOut, setCheckingOut]=useState(false);
     const checkout = () => {
